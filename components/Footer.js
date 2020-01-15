@@ -1,5 +1,4 @@
 import React from 'react'
-import LayoutComponent from './LayoutComponent'
 
 const Footer = () => {
   return (

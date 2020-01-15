@@ -3,7 +3,7 @@ import LayoutDashboard from '../../components/LayoutDashboard'
 
 const DashboardAdmin = () => {
   return (
-    <LayoutDashboard>
+    <LayoutDashboard title="Dashboard">
       {/* Main Content */}
       <div className="main-content">
         <section className="section">
@@ -126,7 +126,7 @@ const DashboardAdmin = () => {
                 <div className="card-body" id="top-5-scroll">
                   <ul className="list-unstyled list-unstyled-border">
                     <li className="media">
-                      <img className="mr-3 rounded" width={55} src="../static/assets/img/products/product-3-50.png" alt="product" />
+                      <img className="mr-3 rounded" width={55} src="../../static/assets/img/products/product-3-50.png" alt="product" />
                       <div className="media-body">
                         <div className="float-right">
                           <div className="font-weight-600 text-muted text-small">86 Sales</div>
@@ -145,7 +145,7 @@ const DashboardAdmin = () => {
                       </div>
                     </li>
                     <li className="media">
-                      <img className="mr-3 rounded" width={55} src="../static/assets/img/products/product-4-50.png" alt="product" />
+                      <img className="mr-3 rounded" width={55} src="../../static/assets/img/products/product-4-50.png" alt="product" />
                       <div className="media-body">
                         <div className="float-right">
                           <div className="font-weight-600 text-muted text-small">67 Sales</div>
@@ -164,7 +164,7 @@ const DashboardAdmin = () => {
                       </div>
                     </li>
                     <li className="media">
-                      <img className="mr-3 rounded" width={55} src="../static/assets/img/products/product-1-50.png" alt="product" />
+                      <img className="mr-3 rounded" width={55} src="../../static/assets/img/products/product-1-50.png" alt="product" />
                       <div className="media-body">
                         <div className="float-right">
                           <div className="font-weight-600 text-muted text-small">63 Sales</div>
@@ -183,7 +183,7 @@ const DashboardAdmin = () => {
                       </div>
                     </li>
                     <li className="media">
-                      <img className="mr-3 rounded" width={55} src="../static/assets/img/products/product-3-50.png" alt="product" />
+                      <img className="mr-3 rounded" width={55} src="../../static/assets/img/products/product-3-50.png" alt="product" />
                       <div className="media-body">
                         <div className="float-right">
                           <div className="font-weight-600 text-muted text-small">28 Sales</div>
@@ -202,7 +202,7 @@ const DashboardAdmin = () => {
                       </div>
                     </li>
                     <li className="media">
-                      <img className="mr-3 rounded" width={55} src="../static/assets/img/products/product-5-50.png" alt="product" />
+                      <img className="mr-3 rounded" width={55} src="../../static/assets/img/products/product-5-50.png" alt="product" />
                       <div className="media-body">
                         <div className="float-right">
                           <div className="font-weight-600 text-muted text-small">19 Sales</div>
@@ -246,7 +246,7 @@ const DashboardAdmin = () => {
                     <div>
                       <div className="product-item pb-3">
                         <div className="product-image">
-                          <img alt="image" src="../static/assets/img/products/product-4-50.png" className="img-fluid" />
+                          <img alt="image" src="../../static/assets/img/products/product-4-50.png" className="img-fluid" />
                         </div>
                         <div className="product-details">
                           <div className="product-name">iBook Pro 2018</div>
@@ -267,7 +267,7 @@ const DashboardAdmin = () => {
                     <div>
                       <div className="product-item">
                         <div className="product-image">
-                          <img alt="image" src="../static/assets/img/products/product-3-50.png" className="img-fluid" />
+                          <img alt="image" src="../../static/assets/img/products/product-3-50.png" className="img-fluid" />
                         </div>
                         <div className="product-details">
                           <div className="product-name">oPhone S9 Limited</div>
@@ -288,7 +288,7 @@ const DashboardAdmin = () => {
                     <div>
                       <div className="product-item">
                         <div className="product-image">
-                          <img alt="image" src="../static/assets/img/products/product-1-50.png" className="img-fluid" />
+                          <img alt="image" src="../../static/assets/img/products/product-1-50.png" className="img-fluid" />
                         </div>
                         <div className="product-details">
                           <div className="product-name">Headphone Blitz</div>
@@ -321,7 +321,7 @@ const DashboardAdmin = () => {
                       <div className="text-title mb-2">July</div>
                       <ul className="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
                         <li className="media">
-                          <img className="img-fluid mt-1 img-shadow" src="../static/assets/modules/flag-icon-css/flags/4x3/id.svg"
+                          <img className="img-fluid mt-1 img-shadow" src="../../static/assets/modules/flag-icon-css/flags/4x3/id.svg"
                             alt="image" width={40} />
                           <div className="media-body ml-3">
                             <div className="media-title">Indonesia</div>
@@ -330,7 +330,7 @@ const DashboardAdmin = () => {
                           </div>
                         </li>
                         <li className="media">
-                          <img className="img-fluid mt-1 img-shadow" src="../static/assets/modules/flag-icon-css/flags/4x3/my.svg"
+                          <img className="img-fluid mt-1 img-shadow" src="../../static/assets/modules/flag-icon-css/flags/4x3/my.svg"
                             alt="image" width={40} />
                           <div className="media-body ml-3">
                             <div className="media-title">Malaysia</div>
@@ -339,7 +339,7 @@ const DashboardAdmin = () => {
                           </div>
                         </li>
                         <li className="media">
-                          <img className="img-fluid mt-1 img-shadow" src="../static/assets/modules/flag-icon-css/flags/4x3/us.svg"
+                          <img className="img-fluid mt-1 img-shadow" src="../../static/assets/modules/flag-icon-css/flags/4x3/us.svg"
                             alt="image" width={40} />
                           <div className="media-body ml-3">
                             <div className="media-title">United States</div>
@@ -353,7 +353,7 @@ const DashboardAdmin = () => {
                       <div className="text-title mb-2">August</div>
                       <ul className="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
                         <li className="media">
-                          <img className="img-fluid mt-1 img-shadow" src="../static/assets/modules/flag-icon-css/flags/4x3/id.svg"
+                          <img className="img-fluid mt-1 img-shadow" src="../../static/assets/modules/flag-icon-css/flags/4x3/id.svg"
                             alt="image" width={40} />
                           <div className="media-body ml-3">
                             <div className="media-title">Indonesia</div>
@@ -362,7 +362,7 @@ const DashboardAdmin = () => {
                           </div>
                         </li>
                         <li className="media">
-                          <img className="img-fluid mt-1 img-shadow" src="../static/assets/modules/flag-icon-css/flags/4x3/ps.svg"
+                          <img className="img-fluid mt-1 img-shadow" src="../../static/assets/modules/flag-icon-css/flags/4x3/ps.svg"
                             alt="image" width={40} />
                           <div className="media-body ml-3">
                             <div className="media-title">Palestine</div>
@@ -371,7 +371,7 @@ const DashboardAdmin = () => {
                           </div>
                         </li>
                         <li className="media">
-                          <img className="img-fluid mt-1 img-shadow" src="../static/assets/modules/flag-icon-css/flags/4x3/de.svg"
+                          <img className="img-fluid mt-1 img-shadow" src="../../static/assets/modules/flag-icon-css/flags/4x3/de.svg"
                             alt="image" width={40} />
                           <div className="media-body ml-3">
                             <div className="media-title">Germany</div>

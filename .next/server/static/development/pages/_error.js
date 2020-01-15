@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -126,7 +126,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   },
   __self: undefined
 }, __jsx("meta", {
-  charset: "UTF-8",
+  charSet: "UTF-8",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
@@ -278,7 +278,70 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     lineNumber: 53
   },
   __self: undefined
-})), children));
+})), children, __jsx("script", {
+  src: "../static/assets/modules/jquery.min.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 60
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/modules/popper.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 61
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/modules/tooltip.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 62
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/modules/bootstrap/js/bootstrap.min.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 63
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/modules/nicescroll/jquery.nicescroll.min.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 64
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/modules/moment.min.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 65
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/js/stisla.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 66
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/js/scripts.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 73
+  },
+  __self: undefined
+}), __jsx("script", {
+  src: "../static/assets/js/custom.js",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 74
+  },
+  __self: undefined
+})));
 
 /***/ }),
 
@@ -379,7 +442,7 @@ const ErrorPage = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/_error.js ***!
   \*******************************/

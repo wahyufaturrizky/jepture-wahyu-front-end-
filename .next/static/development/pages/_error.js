@@ -33,7 +33,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, __jsx("meta", {
-    charset: "UTF-8",
+    charSet: "UTF-8",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -181,7 +181,70 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 53
     },
     __self: this
-  })), children);
+  })), children, __jsx("script", {
+    src: "../static/assets/modules/jquery.min.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/modules/popper.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/modules/tooltip.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/modules/bootstrap/js/bootstrap.min.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/modules/nicescroll/jquery.nicescroll.min.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/modules/moment.min.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/js/stisla.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/js/scripts.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }), __jsx("script", {
+    src: "../static/assets/js/custom.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }));
 });
 
 /***/ }),
@@ -7996,7 +8059,7 @@ var ErrorPage = function ErrorPage() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5C_error.js ***!
   \************************************************************************************************************************************/
@@ -8019,5 +8082,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map

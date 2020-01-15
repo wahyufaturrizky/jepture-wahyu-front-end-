@@ -4,7 +4,7 @@ import Head from 'next/head'
 export default ({ children, title }) => (
     <div>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport" />
 
         {/* Favicon */}
@@ -55,6 +55,23 @@ export default ({ children, title }) => (
       </Head>
 
       {children}
+
+        {/* General JS Scripts */}
+        <script src="../static/assets/modules/jquery.min.js"/>
+        <script src="../static/assets/modules/popper.js"/>
+        <script src="../static/assets/modules/tooltip.js"/>
+        <script src="../static/assets/modules/bootstrap/js/bootstrap.min.js"/>
+        <script src="../static/assets/modules/nicescroll/jquery.nicescroll.min.js"/>
+        <script src="../static/assets/modules/moment.min.js"/>
+        <script src="../static/assets/js/stisla.js"/>
+
+        {/* JS Libraies */}
+
+        {/* Page Specific JS File */}
+
+        {/* Template JS File */}
+        <script src="../static/assets/js/scripts.js"/>
+        <script src="../static/assets/js/custom.js"/>
 
     </div>
 )
