@@ -47,7 +47,7 @@ class EditPost extends Component {
                   </div>
                   <div className="profile-widget-description">
                     <div className="profile-widget-name">Wahyu Fatur Rizki <div className="text-muted d-inline font-weight-normal"><div className="slash" /> Web Developer</div></div>
-                    Wahyu Fatur Rizki is a superhero name in <b>Indonesia</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with <b>'John Doe'</b>.
+                    Wahyu Fatur Rizki is a superhero name in <b>Indonesia</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template.
                   </div>
                   <div className="card-footer text-center">
                     <div className="font-weight-bold mb-2">Follow Wahyu Fatur Rizki On</div>
