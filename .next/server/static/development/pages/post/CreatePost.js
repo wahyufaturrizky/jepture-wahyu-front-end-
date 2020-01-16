@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,14 +130,15 @@ const Footer = () => {
       lineNumber: 8
     },
     __self: undefined
-  }), " Design By ", __jsx("a", {
-    href: "https://nauval.in/",
+  }), "Modify Design By ", __jsx("a", {
+    target: "_blank",
+    href: "https://www.linkedin.com/in/wahyu-fatur-rizky/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
-  }, "Muhamad Nauval Azhar")), __jsx("div", {
+  }, "Wahyu Fatur Rizki")), __jsx("div", {
     className: "footer-right",
     __source: {
       fileName: _jsxFileName,
@@ -506,49 +507,52 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\ReactJs\\jepture-wahyu-front-end-\\components\\Navbar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 const Navbar = () => {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: undefined
   }, __jsx("div", {
     className: "navbar-bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: undefined
   }), __jsx("nav", {
     className: "navbar navbar-expand-lg main-navbar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("form", {
     className: "form-inline mr-auto",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx("ul", {
     className: "navbar-nav mr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx("a", {
@@ -557,20 +561,20 @@ const Navbar = () => {
     className: "nav-link nav-link-lg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-bars",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("a", {
@@ -579,21 +583,21 @@ const Navbar = () => {
     className: "nav-link nav-link-lg d-sm-none",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
   })))), __jsx("div", {
     className: "search-element",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx("input", {
@@ -604,7 +608,7 @@ const Navbar = () => {
     "data-width": 250,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: undefined
   }), __jsx("button", {
@@ -612,49 +616,49 @@ const Navbar = () => {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: undefined
   })), __jsx("div", {
     className: "search-backdrop",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: undefined
   }), __jsx("div", {
     className: "search-result",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: undefined
   }, __jsx("div", {
     className: "search-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: undefined
   }, "Histories"), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: undefined
   }, "How to hack NASA using CSS"), __jsx("a", {
@@ -662,28 +666,28 @@ const Navbar = () => {
     className: "search-close",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-times",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: undefined
   }))), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: undefined
   }, "Kodinger.com"), __jsx("a", {
@@ -691,28 +695,28 @@ const Navbar = () => {
     className: "search-close",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-times",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: undefined
   }))), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: undefined
   }, "#Stisla"), __jsx("a", {
@@ -720,35 +724,35 @@ const Navbar = () => {
     className: "search-close",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-times",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   }))), __jsx("div", {
     className: "search-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: undefined
   }, "Result"), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("img", {
@@ -758,21 +762,21 @@ const Navbar = () => {
     alt: "product",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }), "oPhone S9 Limited Edition")), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("img", {
@@ -782,21 +786,21 @@ const Navbar = () => {
     alt: "product",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: undefined
   }), "Drone X2 New Gen-7")), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: undefined
   }, __jsx("img", {
@@ -806,84 +810,84 @@ const Navbar = () => {
     alt: "product",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: undefined
   }), "Headphone Blitz")), __jsx("div", {
     className: "search-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: undefined
   }, "Projects"), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("div", {
     className: "search-icon bg-danger text-white mr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-code",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: undefined
   })), "Stisla Admin Template")), __jsx("div", {
     className: "search-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: undefined
   }, __jsx("div", {
     className: "search-icon bg-primary text-white mr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-laptop",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: undefined
   })), "Create a new Homepage Design"))))), __jsx("ul", {
     className: "navbar-nav navbar-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("li", {
     className: "dropdown dropdown-list-toggle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("a", {
@@ -892,49 +896,49 @@ const Navbar = () => {
     className: "nav-link nav-link-lg message-toggle beep",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("i", {
     className: "far fa-envelope",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-menu dropdown-list dropdown-menu-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 85
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 86
     },
     __self: undefined
   }, "Messages", __jsx("div", {
     className: "float-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 87
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 88
     },
     __self: undefined
   }, "Mark All As Read"))), __jsx("div", {
     className: "dropdown-list-content dropdown-list-message",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: undefined
   }, __jsx("a", {
@@ -942,14 +946,14 @@ const Navbar = () => {
     className: "dropdown-item dropdown-item-unread",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 92
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 93
     },
     __self: undefined
   }, __jsx("img", {
@@ -958,40 +962,40 @@ const Navbar = () => {
     className: "rounded-circle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 94
     },
     __self: undefined
   }), __jsx("div", {
     className: "is-online",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: undefined
   }, "Kusnaedi"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 99
     },
     __self: undefined
   }, "Hello, Bro!"), __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: undefined
   }, "10 Hours Ago"))), __jsx("a", {
@@ -999,14 +1003,14 @@ const Navbar = () => {
     className: "dropdown-item dropdown-item-unread",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: undefined
   }, __jsx("img", {
@@ -1015,33 +1019,33 @@ const Navbar = () => {
     className: "rounded-circle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 107
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 108
     },
     __self: undefined
   }, "Dedik Sugiharto"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 109
     },
     __self: undefined
   }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit"), __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 110
     },
     __self: undefined
   }, "12 Hours Ago"))), __jsx("a", {
@@ -1049,14 +1053,14 @@ const Navbar = () => {
     className: "dropdown-item dropdown-item-unread",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 113
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: undefined
   }, __jsx("img", {
@@ -1065,40 +1069,40 @@ const Navbar = () => {
     className: "rounded-circle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: undefined
   }), __jsx("div", {
     className: "is-online",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 116
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 118
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 119
     },
     __self: undefined
   }, "Agung Ardiansyah"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 120
     },
     __self: undefined
   }, "Sunt in culpa qui officia deserunt mollit anim id est laborum."), __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: undefined
   }, "12 Hours Ago"))), __jsx("a", {
@@ -1106,14 +1110,14 @@ const Navbar = () => {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 124
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: undefined
   }, __jsx("img", {
@@ -1122,33 +1126,33 @@ const Navbar = () => {
     className: "rounded-circle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 128
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 129
     },
     __self: undefined
   }, "Ardian Rahardiansyah"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 130
     },
     __self: undefined
   }, "Duis aute irure dolor in reprehenderit in voluptate velit ess"), __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 131
     },
     __self: undefined
   }, "16 Hours Ago"))), __jsx("a", {
@@ -1156,14 +1160,14 @@ const Navbar = () => {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 134
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 135
     },
     __self: undefined
   }, __jsx("img", {
@@ -1172,61 +1176,61 @@ const Navbar = () => {
     className: "rounded-circle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 136
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 138
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 139
     },
     __self: undefined
   }, "Alfa Zulkarnain"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 140
     },
     __self: undefined
   }, "Exercitation ullamco laboris nisi ut aliquip ex ea commodo"), __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 141
     },
     __self: undefined
   }, "Yesterday")))), __jsx("div", {
     className: "dropdown-footer text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 145
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 146
     },
     __self: undefined
   }, "View All ", __jsx("i", {
     className: "fas fa-chevron-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 146
     },
     __self: undefined
   }))))), __jsx("li", {
     className: "dropdown dropdown-list-toggle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 150
     },
     __self: undefined
   }, __jsx("a", {
@@ -1235,49 +1239,49 @@ const Navbar = () => {
     className: "nav-link notification-toggle nav-link-lg beep",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 150
     },
     __self: undefined
   }, __jsx("i", {
     className: "far fa-bell",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 151
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-menu dropdown-list dropdown-menu-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 152
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 153
     },
     __self: undefined
   }, "Notifications", __jsx("div", {
     className: "float-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 154
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 155
     },
     __self: undefined
   }, "Mark All As Read"))), __jsx("div", {
     className: "dropdown-list-content dropdown-list-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 158
     },
     __self: undefined
   }, __jsx("a", {
@@ -1285,35 +1289,35 @@ const Navbar = () => {
     className: "dropdown-item dropdown-item-unread",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 159
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-icon bg-primary text-white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 160
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-code",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160
+      lineNumber: 161
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 163
     },
     __self: undefined
   }, "Template update is available now!", __jsx("div", {
     className: "time text-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 165
     },
     __self: undefined
   }, "2 Min Ago"))), __jsx("a", {
@@ -1321,47 +1325,47 @@ const Navbar = () => {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 168
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-icon bg-info text-white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 169
     },
     __self: undefined
   }, __jsx("i", {
     className: "far fa-user",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 170
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 172
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 173
     },
     __self: undefined
   }, "You"), " and ", __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 173
     },
     __self: undefined
   }, "Dedik Sugiharto"), " are now friends", __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173
+      lineNumber: 174
     },
     __self: undefined
   }, "10 Hours Ago"))), __jsx("a", {
@@ -1369,53 +1373,53 @@ const Navbar = () => {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 177
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-icon bg-success text-white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177
+      lineNumber: 178
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-check",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 179
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 181
     },
     __self: undefined
   }, __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 182
     },
     __self: undefined
   }, "Kusnaedi"), " has moved task ", __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 182
     },
     __self: undefined
   }, "Fix bug header"), " to ", __jsx("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 182
     },
     __self: undefined
   }, "Done"), __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 183
     },
     __self: undefined
   }, "12 Hours Ago"))), __jsx("a", {
@@ -1423,35 +1427,35 @@ const Navbar = () => {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185
+      lineNumber: 186
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-icon bg-danger text-white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186
+      lineNumber: 187
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-exclamation-triangle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187
+      lineNumber: 188
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189
+      lineNumber: 190
     },
     __self: undefined
   }, "Low disk space. Let's clean it!", __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 192
     },
     __self: undefined
   }, "17 Hours Ago"))), __jsx("a", {
@@ -1459,63 +1463,63 @@ const Navbar = () => {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194
+      lineNumber: 195
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-item-icon bg-info text-white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 195
+      lineNumber: 196
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-bell",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196
+      lineNumber: 197
     },
     __self: undefined
   })), __jsx("div", {
     className: "dropdown-item-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198
+      lineNumber: 199
     },
     __self: undefined
   }, "Welcome to Stisla template!", __jsx("div", {
     className: "time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200
+      lineNumber: 201
     },
     __self: undefined
   }, "Yesterday")))), __jsx("div", {
     className: "dropdown-footer text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204
+      lineNumber: 205
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 206
     },
     __self: undefined
   }, "View All ", __jsx("i", {
     className: "fas fa-chevron-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205
+      lineNumber: 206
     },
     __self: undefined
   }))))), __jsx("li", {
     className: "dropdown",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209
+      lineNumber: 210
     },
     __self: undefined
   }, __jsx("a", {
@@ -1524,7 +1528,7 @@ const Navbar = () => {
     className: "nav-link dropdown-toggle nav-link-lg nav-link-user",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209
+      lineNumber: 210
     },
     __self: undefined
   }, __jsx("img", {
@@ -1533,28 +1537,28 @@ const Navbar = () => {
     className: "rounded-circle mr-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211
+      lineNumber: 212
     },
     __self: undefined
   }), __jsx("div", {
     className: "d-sm-none d-lg-inline-block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 212
+      lineNumber: 213
     },
     __self: undefined
   }, "Hi, Wahyu Fatur Rizki")), __jsx("div", {
     className: "dropdown-menu dropdown-menu-right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214
+      lineNumber: 215
     },
     __self: undefined
   }, __jsx("div", {
     className: "dropdown-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 215
+      lineNumber: 216
     },
     __self: undefined
   }, "Logged in 5 min ago"), __jsx("a", {
@@ -1562,14 +1566,14 @@ const Navbar = () => {
     className: "dropdown-item has-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216
+      lineNumber: 217
     },
     __self: undefined
   }, __jsx("i", {
     className: "far fa-user",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217
+      lineNumber: 218
     },
     __self: undefined
   }), " Profile"), __jsx("a", {
@@ -1577,14 +1581,14 @@ const Navbar = () => {
     className: "dropdown-item has-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219
+      lineNumber: 220
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-bolt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220
+      lineNumber: 221
     },
     __self: undefined
   }), " Activities"), __jsx("a", {
@@ -1592,39 +1596,45 @@ const Navbar = () => {
     className: "dropdown-item has-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222
+      lineNumber: 223
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-cog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223
+      lineNumber: 224
     },
     __self: undefined
   }), " Settings"), __jsx("div", {
     className: "dropdown-divider",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225
+      lineNumber: 226
     },
     __self: undefined
-  }), __jsx("a", {
-    href: "#",
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/index",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227
+    },
+    __self: undefined
+  }, __jsx("a", {
     className: "dropdown-item has-icon text-danger",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 228
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-sign-out-alt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 229
     },
     __self: undefined
-  }), " Logout"))))));
+  }), " Logout")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -1747,6 +1757,13 @@ const SideBar = () => {
       lineNumber: 19
     },
     __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/dashboard/DashboardAdmin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
   }, __jsx("a", {
     className: "nav-link",
     href: "index-0.html",
@@ -1755,33 +1772,18 @@ const SideBar = () => {
       lineNumber: 19
     },
     __self: undefined
-  }, "General Dashboard")), __jsx("li", {
-    className: "active",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, __jsx("a", {
-    className: "nav-link",
-    href: "index.html",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: undefined
-  }, "Ecommerce Dashboard")))), __jsx("li", {
+  }, "General Dashboard"))))), __jsx("li", {
     className: "menu-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: undefined
   }, "Pages"), __jsx("li", {
     className: "dropdown",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: undefined
   }, __jsx("a", {
@@ -1789,86 +1791,93 @@ const SideBar = () => {
     className: "nav-link has-dropdown",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-bicycle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: undefined
   }), " ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: undefined
   }, "Features")), __jsx("ul", {
     className: "dropdown-menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: undefined
-  }, __jsx("a", {
-    className: "nav-link",
-    href: "features-post-create.html",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: undefined
-  }, "Post Create")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "./post/Post",
+    href: "/post/CreatePost",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx("a", {
     className: "nav-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "Post Create"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/post/Post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "nav-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
     },
     __self: undefined
   }, "Posts")))))), __jsx("div", {
     className: "mt-4 mb-4 p-3 hide-sidebar-mini",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: undefined
   }, __jsx("a", {
-    href: "https://getstisla.com/docs",
+    target: "_blank",
+    href: "https://www.linkedin.com/in/wahyu-fatur-rizky/",
     className: "btn btn-primary btn-lg btn-block btn-icon-split",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-rocket",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: undefined
-  }), " Documentation"))));
+  }), " Profil Wahyu Fatur Rizki"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SideBar);
@@ -3708,8 +3717,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_LayoutDashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/LayoutDashboard */ "./components/LayoutDashboard.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "C:\\ReactJs\\jepture-wahyu-front-end-\\pages\\post\\CreatePost.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -3718,181 +3730,187 @@ const CreatePost = () => {
     title: "Create Post",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: undefined
   }, __jsx("div", {
     className: "main-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: undefined
   }, __jsx("section", {
     className: "section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: undefined
   }, __jsx("div", {
     className: "section-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx("div", {
     className: "section-header-back",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "./Post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("a", {
-    href: "features-posts.html",
     className: "btn btn-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
   }, __jsx("i", {
     className: "fas fa-arrow-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: undefined
-  }))), __jsx("h1", {
+  })))), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
   }, "Create New Post"), __jsx("div", {
     className: "section-header-breadcrumb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx("div", {
     className: "breadcrumb-item active",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: undefined
   }, "Dashboard")), __jsx("div", {
     className: "breadcrumb-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: undefined
   }, "Posts")), __jsx("div", {
     className: "breadcrumb-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: undefined
   }, "Create New Post"))), __jsx("div", {
     className: "section-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: undefined
   }, __jsx("h2", {
     className: "section-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: undefined
   }, "Create New Post"), __jsx("p", {
     className: "section-lead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: undefined
   }, "On this page you can create a new post and fill in all fields."), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: undefined
   }, __jsx("div", {
     className: "card",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: undefined
   }, __jsx("div", {
     className: "card-header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: undefined
   }, "Write Your Post")), __jsx("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: undefined
   }, "Title"), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: undefined
   }, __jsx("input", {
@@ -3900,74 +3918,74 @@ const CreatePost = () => {
     className: "form-control",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: undefined
   }))), __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: undefined
   }, "Category"), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx("select", {
     className: "form-control selectric",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx("option", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: undefined
   }, "Tech"), __jsx("option", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: undefined
   }, "News"), __jsx("option", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: undefined
   }, "Political")))), __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: undefined
   }, "Content"), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: undefined
   }, __jsx("textarea", {
@@ -3975,28 +3993,28 @@ const CreatePost = () => {
     defaultValue: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: undefined
   }))), __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 57
     },
     __self: undefined
   }, "Thumbnail"), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: undefined
   }, __jsx("div", {
@@ -4004,7 +4022,7 @@ const CreatePost = () => {
     className: "image-preview",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx("label", {
@@ -4012,7 +4030,7 @@ const CreatePost = () => {
     id: "image-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: undefined
   }, "Choose File"), __jsx("input", {
@@ -4021,28 +4039,28 @@ const CreatePost = () => {
     id: "image-upload",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: undefined
   })))), __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: undefined
   }, "Tags"), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 67
     },
     __self: undefined
   }, __jsx("input", {
@@ -4050,81 +4068,81 @@ const CreatePost = () => {
     className: "form-control inputtags",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: undefined
   }))), __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: undefined
   }, "Status"), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: undefined
   }, __jsx("select", {
     className: "form-control selectric",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: undefined
   }, __jsx("option", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: undefined
   }, "Publish"), __jsx("option", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 76
     },
     __self: undefined
   }, "Draft"), __jsx("option", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 77
     },
     __self: undefined
   }, "Pending")))), __jsx("div", {
     className: "form-group row mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx("label", {
     className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 82
     },
     __self: undefined
   }), __jsx("div", {
     className: "col-sm-12 col-md-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn btn-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: undefined
   }, "Create Post")))))))))));
@@ -4134,7 +4152,7 @@ const CreatePost = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!****************************************!*\
   !*** multi ./pages/post/CreatePost.js ***!
   \****************************************/

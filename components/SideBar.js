@@ -16,22 +16,21 @@ const SideBar = () => {
             <li className="dropdown active">
               <a href="#" className="nav-link has-dropdown"><i className="fas fa-fire" /><span>Dashboard</span></a>
               <ul className="dropdown-menu">
-                <li><a className="nav-link" href="index-0.html">General Dashboard</a></li>
-                <li className="active"><a className="nav-link" href="index.html">Ecommerce Dashboard</a></li>
+                <li><Link href="/dashboard/DashboardAdmin"><a className="nav-link" href="index-0.html">General Dashboard</a></Link></li>
               </ul>
             </li>
             <li className="menu-header">Pages</li>
             <li className="dropdown">
               <a href="#" className="nav-link has-dropdown"><i className="fas fa-bicycle" /> <span>Features</span></a>
               <ul className="dropdown-menu">
-                <li><a className="nav-link" href="features-post-create.html">Post Create</a></li>
-                <li><Link href="./post/Post"><a className="nav-link">Posts</a></Link></li>
+                <li><Link href="/post/CreatePost"><a className="nav-link">Post Create</a></Link></li>
+                <li><Link href="/post/Post"><a className="nav-link">Posts</a></Link></li>
               </ul>
             </li>
           </ul>
           <div className="mt-4 mb-4 p-3 hide-sidebar-mini">
-            <a href="https://getstisla.com/docs" className="btn btn-primary btn-lg btn-block btn-icon-split">
-              <i className="fas fa-rocket" /> Documentation
+            <a target="_blank" href="https://www.linkedin.com/in/wahyu-fatur-rizky/" className="btn btn-primary btn-lg btn-block btn-icon-split">
+              <i className="fas fa-rocket" /> Profil Wahyu Fatur Rizki
             </a>
           </div>
         </aside>

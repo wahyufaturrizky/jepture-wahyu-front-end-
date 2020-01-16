@@ -60,9 +60,11 @@ const Homepage = () => {
                       </div>
 
                       <div className="form-group">
-                        <button onClick={()=> Router.push("./dashboard/DashboardAdmin")} type="submit" className="btn btn-primary btn-lg btn-block" tabindex="4">
-                          Login
-                        </button>
+                        <Link href="./dashboard/DashboardAdmin">
+                          <a type="submit" className="btn btn-primary btn-lg btn-block" tabindex="4">
+                            Login
+                          </a>
+                        </Link>
                       </div>
                     </form>
                   </div>

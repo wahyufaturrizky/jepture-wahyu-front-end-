@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -223,9 +224,11 @@ const Navbar = () => {
                 <i className="fas fa-cog" /> Settings
               </a>
               <div className="dropdown-divider" />
-              <a href="#" className="dropdown-item has-icon text-danger">
-                <i className="fas fa-sign-out-alt" /> Logout
-              </a>
+              <Link href="/index">
+                <a className="dropdown-item has-icon text-danger">
+                  <i className="fas fa-sign-out-alt" /> Logout
+                </a>
+              </Link>
             </div>
           </li>
         </ul>

@@ -1,5 +1,6 @@
 import React from 'react'
 import LayoutDashboard from '../../components/LayoutDashboard'
+import Link from 'next/link';
 
 const Post = () => {
   return (
@@ -10,7 +11,7 @@ const Post = () => {
           <div className="section-header">
             <h1>Posts</h1>
             <div className="section-header-button">
-              <a href="features-post-create.html" className="btn btn-primary">Add New</a>
+              <Link href="./CreatePost"><a className="btn btn-primary">Add New</a></Link>
             </div>
             <div className="section-header-breadcrumb">
               <div className="breadcrumb-item active"><a href="#">Dashboard</a></div>

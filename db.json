@@ -1,0 +1,13 @@
+{
+  "posts": [
+    { "id": 1, 
+      "title": "Laravel 5 Tutorial: Introduction", 
+      "body": "Laravel 5 Description", 
+      "author": "typicode", 
+      "slug": "", 
+      "category_name": "Web Developer", 
+      "created_at": "2019-01-20",
+      "updated_at": "2019-01-25"
+    }
+  ]
+}
