@@ -339,7 +339,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }), __jsx("script", {
-    src: "../static/assets/assets/modules/jquery-selectric/jquery.selectric.min.js",
+    src: "../static/assets/modules/jquery-selectric/jquery.selectric.min.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
@@ -12448,7 +12448,7 @@ var Post = function Post() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost%2FPost&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5Cpost%5CPost.js ***!
   \**********************************************************************************************************************************************/
@@ -12471,5 +12471,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[6,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=Post.js.map

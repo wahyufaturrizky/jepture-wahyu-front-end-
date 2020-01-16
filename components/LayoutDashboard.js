@@ -69,7 +69,7 @@ export default ({ children, title }) => (
         <script src="../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
         <script src="../static/assets/modules/summernote/summernote-bs4.js"></script>
         <script src="../static/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
-        <script src="../static/assets/assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+        <script src="../static/assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
         <script src="../static/assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
         <script src="../static/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 

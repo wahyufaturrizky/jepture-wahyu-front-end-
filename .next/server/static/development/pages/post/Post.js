@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -436,7 +436,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   },
   __self: undefined
 }), __jsx("script", {
-  src: "../static/assets/assets/modules/jquery-selectric/jquery.selectric.min.js",
+  src: "../static/assets/modules/jquery-selectric/jquery.selectric.min.js",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 72
@@ -5091,7 +5091,7 @@ const Post = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 9:
 /*!**********************************!*\
   !*** multi ./pages/post/Post.js ***!
   \**********************************/
