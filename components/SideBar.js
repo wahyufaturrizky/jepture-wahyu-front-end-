@@ -6,7 +6,7 @@ const SideBar = () => {
       <div className="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div className="sidebar-brand">
-            <a href="index.html">Stisla</a>
+            <Link href="/dashboard/DashboardAdmin"><a>Stisla</a></Link>
           </div>
           <div className="sidebar-brand sidebar-brand-sm">
             <a href="index.html">St</a>

@@ -21,11 +21,18 @@ export default ({ children, title }) => (
         <link rel="stylesheet" href="../static/assets/modules/fontawesome/css/all.min.css" />
   
         {/* CSS Libraries */}
+        <link rel="stylesheet" href="../static/assets/modules/bootstrap-social/bootstrap-social.css"/>
         <link rel="stylesheet" href="../static/assets/modules/jqvmap/dist/jqvmap.min.css" />
         <link rel="stylesheet" href="../static/assets/modules/summernote/summernote-bs4.css" />
         <link rel="stylesheet" href="../static/assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="../static/assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../static/assets/modules/jquery-selectric/selectric.css"/>
+        <link rel="stylesheet" href="../static/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"/>
+        <link rel="stylesheet" href="../static/assets/modules/bootstrap-daterangepicker/daterangepicker.css"/>
+        <link rel="stylesheet" href="../static/assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css"/>
+        <link rel="stylesheet" href="../static/assets/modules/select2/dist/css/select2.min.css"/>
+        <link rel="stylesheet" href="../static/assets/modules/jquery-selectric/selectric.css"/>
+        <link rel="stylesheet" href="../static/assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css"/>
         <link rel="stylesheet" href="../static/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"/>
   
         {/* Template CSS */}
@@ -77,6 +84,7 @@ export default ({ children, title }) => (
         <script src="../static/assets/js/page/index.js"></script>
         <script src="../static/assets/js/page/features-posts.js"></script>
         <script src="../static/assets/js/page/features-post-create.js"></script>
+        <script src="../static/assets/js/page/forms-advanced-forms.js"></script>
 
         {/* Template JS File */}
         <script src="../static/assets/js/scripts.js"></script>
