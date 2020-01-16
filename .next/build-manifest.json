@@ -20,11 +20,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/index": [
+    "/dashboard/DashboardAdmin": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/post/CreatePost": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
