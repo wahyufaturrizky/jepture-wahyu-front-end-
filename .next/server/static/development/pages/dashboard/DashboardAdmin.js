@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2074,36 +2074,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/extends.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
@@ -3815,595 +3785,2613 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/post/CreatePost.js":
-/*!**********************************!*\
-  !*** ./pages/post/CreatePost.js ***!
-  \**********************************/
+/***/ "./pages/dashboard/DashboardAdmin.js":
+/*!*******************************************!*\
+  !*** ./pages/dashboard/DashboardAdmin.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_LayoutDashboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/LayoutDashboard */ "./components/LayoutDashboard.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-
-var _jsxFileName = "C:\\ReactJs\\jepture-wahyu-front-end-\\pages\\post\\CreatePost.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_LayoutDashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/LayoutDashboard */ "./components/LayoutDashboard.js");
+var _jsxFileName = "C:\\ReactJs\\jepture-wahyu-front-end-\\pages\\dashboard\\DashboardAdmin.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-
-class CreatePost extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
-  constructor(...args) {
-    super(...args);
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "state", {
-      title: '',
-      author: '',
-      category_name: '',
-      body_post: '',
-      status_post: '',
-      created_at: '',
-      update_at: ''
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleSubmit", event => {
-      event.preventDefault();
-      const posts = {
-        title: this.state.title,
-        author: this.state.author,
-        category_name: this.state.category_name,
-        body_post: this.state.body_post,
-        status_post: this.state.status_post,
-        created_at: this.state.created_at,
-        update_at: this.state.update_at
-      };
-      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers', posts).then(res => {
-        console.log(res);
-        console.log(res.data);
-      });
-    });
-  }
-
+class DashboardAdmin extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    return __jsx(_components_LayoutDashboard__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      title: "Create Post",
+    return __jsx(_components_LayoutDashboard__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      title: "Dashboard",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 7
       },
       __self: this
     }, __jsx("div", {
       className: "main-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 9
       },
       __self: this
     }, __jsx("section", {
       className: "section",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 10
       },
       __self: this
     }, __jsx("div", {
-      className: "section-header",
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "col-lg-4 col-md-4 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card card-statistic-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-stats",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-stats-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, "Order Statistics -", __jsx("div", {
+      className: "dropdown d-inline",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, __jsx("a", {
+      className: "font-weight-600 dropdown-toggle",
+      "data-toggle": "dropdown",
+      href: "#",
+      id: "orders-month",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, "August"), __jsx("ul", {
+      className: "dropdown-menu dropdown-menu-sm",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("li", {
+      className: "dropdown-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, "Select Month"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, "January")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, "February")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, "March")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "April")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, "May")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, "June")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, "July")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item active",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, "August")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, "September")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, "October")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, "November")), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, "December"))))), __jsx("div", {
+      className: "card-stats-items",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-stats-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-stats-item-count",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, "24"), __jsx("div", {
+      className: "card-stats-item-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, "Pending")), __jsx("div", {
+      className: "card-stats-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-stats-item-count",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, "12"), __jsx("div", {
+      className: "card-stats-item-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }, "Shipping")), __jsx("div", {
+      className: "card-stats-item",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 45
       },
       __self: this
     }, __jsx("div", {
-      className: "section-header-back",
+      className: "card-stats-item-count",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 46
       },
       __self: this
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      as: "./Post",
-      href: "./",
+    }, "23"), __jsx("div", {
+      className: "card-stats-item-label",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
       },
       __self: this
-    }, __jsx("a", {
-      className: "btn btn-icon",
+    }, "Completed")))), __jsx("div", {
+      className: "card-icon shadow-primary bg-primary",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 51
       },
       __self: this
     }, __jsx("i", {
-      className: "fas fa-arrow-left",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47
-      },
-      __self: this
-    })))), __jsx("h1", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, "Create New Post"), __jsx("div", {
-      className: "section-header-breadcrumb",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "breadcrumb-item active",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      as: "../dashboard/DashboardAdmin",
-      href: "../dashboard/  ",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }, __jsx("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }, "Dashboard"))), __jsx("div", {
-      className: "breadcrumb-item",
+      className: "fas fa-archive",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 52
       },
       __self: this
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      as: "./Post",
-      href: "./",
+    })), __jsx("div", {
+      className: "card-wrap",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
-      },
-      __self: this
-    }, __jsx("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52
-      },
-      __self: this
-    }, "Posts"))), __jsx("div", {
-      className: "breadcrumb-item",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53
-      },
-      __self: this
-    }, "Create New Post"))), __jsx("div", {
-      className: "section-body",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56
-      },
-      __self: this
-    }, __jsx("h2", {
-      className: "section-title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57
-      },
-      __self: this
-    }, "Create New Post"), __jsx("p", {
-      className: "section-lead",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, "On this page you can create a new post and fill in all fields."), __jsx("div", {
-      className: "row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "col-12",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 62
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "card",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 54
       },
       __self: this
     }, __jsx("div", {
       className: "card-header",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 55
       },
       __self: this
     }, __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
+        lineNumber: 56
+      },
+      __self: this
+    }, "Total Orders")), __jsx("div", {
+      className: "card-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, "59")))), __jsx("div", {
+      className: "col-lg-4 col-md-4 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card card-statistic-2",
+      __source: {
+        fileName: _jsxFileName,
         lineNumber: 65
       },
       __self: this
-    }, "Write Your Post")), __jsx("div", {
-      className: "card-body",
+    }, __jsx("div", {
+      className: "card-chart",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, __jsx("canvas", {
+      id: "balance-chart",
+      height: 80,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 67
       },
       __self: this
-    }, __jsx("form", {
-      onSubmit: this.handleSubmit,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "form-group row mb-4",
+    })), __jsx("div", {
+      className: "card-icon shadow-primary bg-primary",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
       },
       __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+    }, __jsx("i", {
+      className: "fas fa-dollar-sign",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 70
       },
       __self: this
-    }, "Title"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71
-      },
-      __self: this
-    }, __jsx("input", {
-      type: "text",
-      className: "form-control",
-      onChange: event => this.setState({
-        title: event.target.value
-      }),
-      name: "title",
+    })), __jsx("div", {
+      className: "card-wrap",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 72
       },
       __self: this
-    }))), __jsx("div", {
-      className: "form-group row mb-4",
+    }, __jsx("div", {
+      className: "card-header",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 73
       },
       __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, "Balance")), __jsx("div", {
+      className: "card-body",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 76
       },
       __self: this
-    }, "Author"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 77
-      },
-      __self: this
-    }, __jsx("input", {
-      type: "text",
-      className: "form-control",
-      onChange: event => this.setState({
-        author: event.target.value
-      }),
-      name: "author",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 78
-      },
-      __self: this
-    }))), __jsx("div", {
-      className: "form-group row mb-4",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81
-      },
-      __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+    }, "$187,13")))), __jsx("div", {
+      className: "col-lg-4 col-md-4 col-sm-12",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 82
       },
       __self: this
-    }, "Category"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
+    }, __jsx("div", {
+      className: "card card-statistic-2",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 83
       },
       __self: this
-    }, __jsx("select", {
-      className: "form-control",
-      onChange: event => this.setState({
-        category_name: event.target.value
-      }),
-      name: "category_name",
+    }, __jsx("div", {
+      className: "card-chart",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 84
       },
       __self: this
-    }, __jsx("option", {
+    }, __jsx("canvas", {
+      id: "sales-chart",
+      height: 80,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 85
       },
       __self: this
-    }, "Choose Bellow"), __jsx("option", {
-      value: "Tech",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 86
-      },
-      __self: this
-    }, "Tech"), __jsx("option", {
-      value: "News",
+    })), __jsx("div", {
+      className: "card-icon shadow-primary bg-primary",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 87
       },
       __self: this
-    }, "News"), __jsx("option", {
-      value: "Political",
+    }, __jsx("i", {
+      className: "fas fa-shopping-bag",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 88
       },
       __self: this
-    }, "Political")))), __jsx("div", {
-      className: "form-group row mb-4",
+    })), __jsx("div", {
+      className: "card-wrap",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 91
+      },
+      __self: this
+    }, __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 92
       },
       __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 93
-      },
-      __self: this
-    }, "Content"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
+    }, "Sales")), __jsx("div", {
+      className: "card-body",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 94
       },
       __self: this
-    }, __jsx("textarea", {
-      type: "text",
-      className: "form-control",
-      onChange: event => this.setState({
-        body_post: event.target.value
-      }),
-      name: "body_post",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 95
-      },
-      __self: this
-    }))), __jsx("div", {
-      className: "form-group row mb-4",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 98
-      },
-      __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 99
-      },
-      __self: this
-    }, "Status"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 100
-      },
-      __self: this
-    }, __jsx("select", {
-      className: "form-control",
-      onChange: event => this.setState({
-        status_post: event.target.value
-      }),
-      name: "status_post",
+    }, "4,732"))))), __jsx("div", {
+      className: "row",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 101
       },
       __self: this
-    }, __jsx("option", {
+    }, __jsx("div", {
+      className: "col-lg-8",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 102
       },
       __self: this
-    }, "Choose Below"), __jsx("option", {
-      value: "Publish",
+    }, __jsx("div", {
+      className: "card",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 103
       },
       __self: this
-    }, "Publish"), __jsx("option", {
-      value: "Draft",
+    }, __jsx("div", {
+      className: "card-header",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 104
       },
       __self: this
-    }, "Draft"), __jsx("option", {
-      value: "Pending",
+    }, __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 105
       },
       __self: this
-    }, "Pending")))), __jsx("div", {
-      className: "form-group row mb-4",
+    }, "Budget vs Sales")), __jsx("div", {
+      className: "card-body",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 107
       },
       __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+    }, __jsx("canvas", {
+      id: "myChart",
+      height: 158,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 110
+        lineNumber: 108
       },
       __self: this
-    }, "Create Date"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 111
-      },
-      __self: this
-    }, __jsx("input", {
-      type: "date",
-      className: "form-control datemask",
-      placeholder: "YYYY/MM/DD",
-      onChange: event => this.setState({
-        created_at: event.target.value
-      }),
-      name: "created_at",
+    })))), __jsx("div", {
+      className: "col-lg-4",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 112
       },
       __self: this
-    }))), __jsx("div", {
-      className: "form-group row mb-4",
+    }, __jsx("div", {
+      className: "card gradient-bottom",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 114
+      },
+      __self: this
+    }, __jsx("h4", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 115
       },
       __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+    }, "Top 5 Products"), __jsx("div", {
+      className: "card-header-action dropdown",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 116
       },
       __self: this
-    }, "Update Date"), __jsx("div", {
-      className: "col-sm-12 col-md-7",
+    }, __jsx("a", {
+      href: "#",
+      "data-toggle": "dropdown",
+      className: "btn btn-danger dropdown-toggle",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 117
       },
       __self: this
-    }, __jsx("input", {
-      type: "date",
-      className: "form-control datemask",
-      placeholder: "YYYY/MM/DD",
-      onChange: event => this.setState({
-        update_at: event.target.value
-      }),
-      name: "update_at",
+    }, "Month"), __jsx("ul", {
+      className: "dropdown-menu dropdown-menu-sm dropdown-menu-right",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 118
       },
       __self: this
-    }))), __jsx("div", {
-      className: "form-group row mb-4",
+    }, __jsx("li", {
+      className: "dropdown-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119
+      },
+      __self: this
+    }, "Select Period"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120
+      },
+      __self: this
+    }, "Today")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 121
       },
       __self: this
-    }, __jsx("label", {
-      className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121
+      },
+      __self: this
+    }, "Week")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 122
       },
       __self: this
-    }), __jsx("div", {
-      className: "col-sm-12 col-md-7",
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item active",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 122
+      },
+      __self: this
+    }, "Month")), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 123
       },
       __self: this
-    }, __jsx("button", {
-      type: "submit",
+    }, __jsx("a", {
+      href: "#",
+      className: "dropdown-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123
+      },
+      __self: this
+    }, "This Year"))))), __jsx("div", {
+      className: "card-body",
+      id: "top-5-scroll",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 127
+      },
+      __self: this
+    }, __jsx("ul", {
+      className: "list-unstyled list-unstyled-border",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 128
+      },
+      __self: this
+    }, __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 129
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "mr-3 rounded",
+      width: 55,
+      src: "../../static/assets/img/products/product-3-50.png",
+      alt: "product",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 130
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 131
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "float-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 132
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "font-weight-600 text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 133
+      },
+      __self: this
+    }, "86 Sales")), __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 135
+      },
+      __self: this
+    }, "oPhone S9 Limited"), __jsx("div", {
+      className: "mt-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 136
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 137
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-primary",
+      "data-width": "64%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 138
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 139
+      },
+      __self: this
+    }, "$68,714")), __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 141
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-danger",
+      "data-width": "43%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 142
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 143
+      },
+      __self: this
+    }, "$38,700"))))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 148
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "mr-3 rounded",
+      width: 55,
+      src: "../../static/assets/img/products/product-4-50.png",
+      alt: "product",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 149
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 150
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "float-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 151
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "font-weight-600 text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 152
+      },
+      __self: this
+    }, "67 Sales")), __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 154
+      },
+      __self: this
+    }, "iBook Pro 2018"), __jsx("div", {
+      className: "mt-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 155
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 156
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-primary",
+      "data-width": "84%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 157
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 158
+      },
+      __self: this
+    }, "$107,133")), __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 160
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-danger",
+      "data-width": "60%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 161
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 162
+      },
+      __self: this
+    }, "$91,455"))))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 167
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "mr-3 rounded",
+      width: 55,
+      src: "../../static/assets/img/products/product-1-50.png",
+      alt: "product",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 168
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 169
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "float-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 170
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "font-weight-600 text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 171
+      },
+      __self: this
+    }, "63 Sales")), __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 173
+      },
+      __self: this
+    }, "Headphone Blitz"), __jsx("div", {
+      className: "mt-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 174
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 175
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-primary",
+      "data-width": "34%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 176
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 177
+      },
+      __self: this
+    }, "$3,717")), __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 179
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-danger",
+      "data-width": "28%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 180
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 181
+      },
+      __self: this
+    }, "$2,835"))))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 186
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "mr-3 rounded",
+      width: 55,
+      src: "../../static/assets/img/products/product-3-50.png",
+      alt: "product",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 187
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 188
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "float-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 189
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "font-weight-600 text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 190
+      },
+      __self: this
+    }, "28 Sales")), __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 192
+      },
+      __self: this
+    }, "oPhone X Lite"), __jsx("div", {
+      className: "mt-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 193
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 194
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-primary",
+      "data-width": "45%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 195
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 196
+      },
+      __self: this
+    }, "$13,972")), __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 198
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-danger",
+      "data-width": "30%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 199
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 200
+      },
+      __self: this
+    }, "$9,660"))))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 205
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "mr-3 rounded",
+      width: 55,
+      src: "../../static/assets/img/products/product-5-50.png",
+      alt: "product",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 206
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 207
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "float-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 208
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "font-weight-600 text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 209
+      },
+      __self: this
+    }, "19 Sales")), __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 211
+      },
+      __self: this
+    }, "Old Camera"), __jsx("div", {
+      className: "mt-1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 212
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 213
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-primary",
+      "data-width": "35%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 214
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 215
+      },
+      __self: this
+    }, "$7,391")), __jsx("div", {
+      className: "budget-price",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 217
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-danger",
+      "data-width": "28%",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 218
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 219
+      },
+      __self: this
+    }, "$5,472"))))))), __jsx("div", {
+      className: "card-footer pt-3 d-flex justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 226
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 227
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-primary",
+      "data-width": 20,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 228
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 229
+      },
+      __self: this
+    }, "Selling Price")), __jsx("div", {
+      className: "budget-price justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 231
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "budget-price-square bg-danger",
+      "data-width": 20,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 232
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "budget-price-label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 233
+      },
+      __self: this
+    }, "Budget Price")))))), __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 239
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "col-md-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 240
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 241
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 242
+      },
+      __self: this
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 243
+      },
+      __self: this
+    }, "Best Products")), __jsx("div", {
+      className: "card-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 245
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "owl-carousel owl-theme",
+      id: "products-carousel",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 246
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 247
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-item pb-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 248
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-image",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 249
+      },
+      __self: this
+    }, __jsx("img", {
+      alt: "image",
+      src: "../../static/assets/img/products/product-4-50.png",
+      className: "img-fluid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 250
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "product-details",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 252
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 253
+      },
+      __self: this
+    }, "iBook Pro 2018"), __jsx("div", {
+      className: "product-review",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 254
+      },
+      __self: this
+    }, __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 255
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 256
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 257
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 258
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 259
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 261
+      },
+      __self: this
+    }, "67 Sales"), __jsx("div", {
+      className: "product-cta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 262
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
       className: "btn btn-primary",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124
+        lineNumber: 263
       },
       __self: this
-    }, "Create Post"))))))))))));
+    }, "Detail"))))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 268
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 269
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-image",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 270
+      },
+      __self: this
+    }, __jsx("img", {
+      alt: "image",
+      src: "../../static/assets/img/products/product-3-50.png",
+      className: "img-fluid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 271
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "product-details",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 273
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 274
+      },
+      __self: this
+    }, "oPhone S9 Limited"), __jsx("div", {
+      className: "product-review",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 275
+      },
+      __self: this
+    }, __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 276
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 277
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 278
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 279
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star-half",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 280
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 282
+      },
+      __self: this
+    }, "86 Sales"), __jsx("div", {
+      className: "product-cta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 283
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 284
+      },
+      __self: this
+    }, "Detail"))))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 289
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 290
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-image",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 291
+      },
+      __self: this
+    }, __jsx("img", {
+      alt: "image",
+      src: "../../static/assets/img/products/product-1-50.png",
+      className: "img-fluid",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 292
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "product-details",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 294
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "product-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 295
+      },
+      __self: this
+    }, "Headphone Blitz"), __jsx("div", {
+      className: "product-review",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 296
+      },
+      __self: this
+    }, __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 297
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 298
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 299
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "fas fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 300
+      },
+      __self: this
+    }), __jsx("i", {
+      className: "far fa-star",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 301
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "text-muted text-small",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 303
+      },
+      __self: this
+    }, "63 Sales"), __jsx("div", {
+      className: "product-cta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 304
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 305
+      },
+      __self: this
+    }, "Detail"))))))))), __jsx("div", {
+      className: "col-md-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 314
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 315
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 316
+      },
+      __self: this
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 317
+      },
+      __self: this
+    }, "Top Countries")), __jsx("div", {
+      className: "card-body",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 319
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 320
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "col-sm-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 321
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "text-title mb-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 322
+      },
+      __self: this
+    }, "July"), __jsx("ul", {
+      className: "list-unstyled list-unstyled-border list-unstyled-noborder mb-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 323
+      },
+      __self: this
+    }, __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 324
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "img-fluid mt-1 img-shadow",
+      src: "../../static/assets/modules/flag-icon-css/flags/4x3/id.svg",
+      alt: "image",
+      width: 40,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 325
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body ml-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 327
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 328
+      },
+      __self: this
+    }, "Indonesia"), __jsx("div", {
+      className: "text-small text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 329
+      },
+      __self: this
+    }, "3,282 ", __jsx("i", {
+      className: "fas fa-caret-down text-danger",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 329
+      },
+      __self: this
+    })))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 333
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "img-fluid mt-1 img-shadow",
+      src: "../../static/assets/modules/flag-icon-css/flags/4x3/my.svg",
+      alt: "image",
+      width: 40,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 334
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body ml-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 336
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 337
+      },
+      __self: this
+    }, "Malaysia"), __jsx("div", {
+      className: "text-small text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 338
+      },
+      __self: this
+    }, "2,976 ", __jsx("i", {
+      className: "fas fa-caret-down text-danger",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 338
+      },
+      __self: this
+    })))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 342
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "img-fluid mt-1 img-shadow",
+      src: "../../static/assets/modules/flag-icon-css/flags/4x3/us.svg",
+      alt: "image",
+      width: 40,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 343
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body ml-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 345
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 346
+      },
+      __self: this
+    }, "United States"), __jsx("div", {
+      className: "text-small text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 347
+      },
+      __self: this
+    }, "1,576 ", __jsx("i", {
+      className: "fas fa-caret-up text-success",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 347
+      },
+      __self: this
+    })))))), __jsx("div", {
+      className: "col-sm-6 mt-sm-0 mt-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 353
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "text-title mb-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 354
+      },
+      __self: this
+    }, "August"), __jsx("ul", {
+      className: "list-unstyled list-unstyled-border list-unstyled-noborder mb-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 355
+      },
+      __self: this
+    }, __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 356
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "img-fluid mt-1 img-shadow",
+      src: "../../static/assets/modules/flag-icon-css/flags/4x3/id.svg",
+      alt: "image",
+      width: 40,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 357
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body ml-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 359
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 360
+      },
+      __self: this
+    }, "Indonesia"), __jsx("div", {
+      className: "text-small text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 361
+      },
+      __self: this
+    }, "3,486 ", __jsx("i", {
+      className: "fas fa-caret-up text-success",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 361
+      },
+      __self: this
+    })))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 365
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "img-fluid mt-1 img-shadow",
+      src: "../../static/assets/modules/flag-icon-css/flags/4x3/ps.svg",
+      alt: "image",
+      width: 40,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 366
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body ml-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 368
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 369
+      },
+      __self: this
+    }, "Palestine"), __jsx("div", {
+      className: "text-small text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 370
+      },
+      __self: this
+    }, "3,182 ", __jsx("i", {
+      className: "fas fa-caret-up text-success",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 370
+      },
+      __self: this
+    })))), __jsx("li", {
+      className: "media",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 374
+      },
+      __self: this
+    }, __jsx("img", {
+      className: "img-fluid mt-1 img-shadow",
+      src: "../../static/assets/modules/flag-icon-css/flags/4x3/de.svg",
+      alt: "image",
+      width: 40,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 375
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "media-body ml-3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 377
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "media-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 378
+      },
+      __self: this
+    }, "Germany"), __jsx("div", {
+      className: "text-small text-muted",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 379
+      },
+      __self: this
+    }, "2,317 ", __jsx("i", {
+      className: "fas fa-caret-down text-danger",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 379
+      },
+      __self: this
+    }))))))))))), __jsx("div", {
+      className: "row",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 390
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "col-md-8",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 391
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 392
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 393
+      },
+      __self: this
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 394
+      },
+      __self: this
+    }, "Invoices"), __jsx("div", {
+      className: "card-header-action",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 395
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-danger",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 396
+      },
+      __self: this
+    }, "View More ", __jsx("i", {
+      className: "fas fa-chevron-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 396
+      },
+      __self: this
+    })))), __jsx("div", {
+      className: "card-body p-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 399
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "table-responsive table-invoice",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 400
+      },
+      __self: this
+    }, __jsx("table", {
+      className: "table table-striped",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 401
+      },
+      __self: this
+    }, __jsx("tbody", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 402
+      },
+      __self: this
+    }, __jsx("tr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 403
+      },
+      __self: this
+    }, __jsx("th", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 404
+      },
+      __self: this
+    }, "Invoice ID"), __jsx("th", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 405
+      },
+      __self: this
+    }, "Customer"), __jsx("th", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 406
+      },
+      __self: this
+    }, "Status"), __jsx("th", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 407
+      },
+      __self: this
+    }, "Due Date"), __jsx("th", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 408
+      },
+      __self: this
+    }, "Action")), __jsx("tr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 410
+      },
+      __self: this
+    }, __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 411
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 411
+      },
+      __self: this
+    }, "INV-87239")), __jsx("td", {
+      className: "font-weight-600",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 412
+      },
+      __self: this
+    }, "Kusnadi"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 413
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "badge badge-warning",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 414
+      },
+      __self: this
+    }, "Unpaid")), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 416
+      },
+      __self: this
+    }, "July 19, 2018"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 417
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 418
+      },
+      __self: this
+    }, "Detail"))), __jsx("tr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 421
+      },
+      __self: this
+    }, __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 422
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 422
+      },
+      __self: this
+    }, "INV-48574")), __jsx("td", {
+      className: "font-weight-600",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 423
+      },
+      __self: this
+    }, "Hasan Basri"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 424
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "badge badge-success",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 425
+      },
+      __self: this
+    }, "Paid")), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 427
+      },
+      __self: this
+    }, "July 21, 2018"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 428
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 429
+      },
+      __self: this
+    }, "Detail"))), __jsx("tr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 432
+      },
+      __self: this
+    }, __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 433
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 433
+      },
+      __self: this
+    }, "INV-76824")), __jsx("td", {
+      className: "font-weight-600",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 434
+      },
+      __self: this
+    }, "Muhamad Nuruzzaki"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 435
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "badge badge-warning",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 436
+      },
+      __self: this
+    }, "Unpaid")), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 438
+      },
+      __self: this
+    }, "July 22, 2018"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 439
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 440
+      },
+      __self: this
+    }, "Detail"))), __jsx("tr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 443
+      },
+      __self: this
+    }, __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 444
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 444
+      },
+      __self: this
+    }, "INV-84990")), __jsx("td", {
+      className: "font-weight-600",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 445
+      },
+      __self: this
+    }, "Agung Ardiansyah"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 446
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "badge badge-warning",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 447
+      },
+      __self: this
+    }, "Unpaid")), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 449
+      },
+      __self: this
+    }, "July 22, 2018"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 450
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 451
+      },
+      __self: this
+    }, "Detail"))), __jsx("tr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 454
+      },
+      __self: this
+    }, __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 455
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 455
+      },
+      __self: this
+    }, "INV-87320")), __jsx("td", {
+      className: "font-weight-600",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 456
+      },
+      __self: this
+    }, "Ardian Rahardiansyah"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 457
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "badge badge-success",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 458
+      },
+      __self: this
+    }, "Paid")), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 460
+      },
+      __self: this
+    }, "July 28, 2018"), __jsx("td", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 461
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "btn btn-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 462
+      },
+      __self: this
+    }, "Detail"))))))))), __jsx("div", {
+      className: "col-md-4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 471
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card card-hero",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 472
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 473
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "card-icon",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 474
+      },
+      __self: this
+    }, __jsx("i", {
+      className: "far fa-question-circle",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 475
+      },
+      __self: this
+    })), __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 477
+      },
+      __self: this
+    }, "14"), __jsx("div", {
+      className: "card-description",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 478
+      },
+      __self: this
+    }, "Customers need help")), __jsx("div", {
+      className: "card-body p-0",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 480
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "tickets-list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 481
+      },
+      __self: this
+    }, __jsx("a", {
+      href: "#",
+      className: "ticket-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 482
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "ticket-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 483
+      },
+      __self: this
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 484
+      },
+      __self: this
+    }, "My order hasn't arrived yet")), __jsx("div", {
+      className: "ticket-info",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 486
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 487
+      },
+      __self: this
+    }, "Laila Tazkiah"), __jsx("div", {
+      className: "bullet",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 488
+      },
+      __self: this
+    }), __jsx("div", {
+      className: "text-primary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 489
+      },
+      __self: this
+    }, "1 min ago"))), __jsx("a", {
+      href: "#",
+      className: "ticket-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 492
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "ticket-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 493
+      },
+      __self: this
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 494
+      },
+      __self: this
+    }, "Please cancel my order")), __jsx("div", {
+      className: "ticket-info",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 496
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 497
+      },
+      __self: this
+    }, "Rizal Fakhri"), __jsx("div", {
+      className: "bullet",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 498
+      },
+      __self: this
+    }), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 499
+      },
+      __self: this
+    }, "2 hours ago"))), __jsx("a", {
+      href: "#",
+      className: "ticket-item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 502
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "ticket-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 503
+      },
+      __self: this
+    }, __jsx("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 504
+      },
+      __self: this
+    }, "Do you see my mother?")), __jsx("div", {
+      className: "ticket-info",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 506
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 507
+      },
+      __self: this
+    }, "Syahdan Ubaidillah"), __jsx("div", {
+      className: "bullet",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 508
+      },
+      __self: this
+    }), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 509
+      },
+      __self: this
+    }, "6 hours ago"))), __jsx("a", {
+      href: "features-tickets.html",
+      className: "ticket-item ticket-more",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 512
+      },
+      __self: this
+    }, "View All ", __jsx("i", {
+      className: "fas fa-chevron-right",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 513
+      },
+      __self: this
+    }))))))))));
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (CreatePost);
+/* harmony default export */ __webpack_exports__["default"] = (DashboardAdmin);
 
 /***/ }),
 
-/***/ 6:
-/*!****************************************!*\
-  !*** multi ./pages/post/CreatePost.js ***!
-  \****************************************/
+/***/ 4:
+/*!*************************************************!*\
+  !*** multi ./pages/dashboard/DashboardAdmin.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\ReactJs\jepture-wahyu-front-end-\pages\post\CreatePost.js */"./pages/post/CreatePost.js");
+module.exports = __webpack_require__(/*! C:\ReactJs\jepture-wahyu-front-end-\pages\dashboard\DashboardAdmin.js */"./pages/dashboard/DashboardAdmin.js");
 
-
-/***/ }),
-
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
 
 /***/ }),
 
@@ -4584,4 +6572,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=CreatePost.js.map
+//# sourceMappingURL=DashboardAdmin.js.map

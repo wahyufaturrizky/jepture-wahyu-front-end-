@@ -13491,7 +13491,7 @@ function (_Component) {
         created_at: _this.state.created_at,
         update_at: _this.state.update_at
       };
-      axios__WEBPACK_IMPORTED_MODULE_10___default.a.post('http://localhost:3004/users', posts).then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_10___default.a.post('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers', posts).then(function (res) {
         console.log(res);
         console.log(res.data);
       });

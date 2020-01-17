@@ -31,17 +31,17 @@
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\_app.js": 2,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\_document.js": 3,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\_error.js": 4,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\auth\\AuthForgotPassword.js": 5,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\auth\\AuthRegister.js": 6,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\dashboard\\DashboardAdmin.js": 7,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\index.js": 8,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\CreatePost.js": 9,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\EditPost.js": 10,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\Post.js": 11,
-      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\ViewPost.js": 12
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\_app.js": 2,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\_document.js": 3,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\_error.js": 4,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\auth\\AuthForgotPassword.js": 5,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\auth\\AuthRegister.js": 6,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\dashboard\\DashboardAdmin.js": 7,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\index.js": 8,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\post\\CreatePost.js": 9,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\post\\EditPost.js": 10,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\post\\Post.js": 11,
+      "static\\_5Rm75bhJsNGCtntzPfvN\\pages\\post\\ViewPost.js": 12
     },
     "bySource": {},
     "usedIds": [

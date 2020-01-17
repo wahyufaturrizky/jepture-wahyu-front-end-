@@ -13682,7 +13682,7 @@ function (_Component) {
       var _this2 = this;
 
       "";
-      axios__WEBPACK_IMPORTED_MODULE_10___default.a.get('http://localhost:3004/users').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_10___default.a.get('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers').then(function (response) {
         _this2.setState({
           posts: response.data
         });
