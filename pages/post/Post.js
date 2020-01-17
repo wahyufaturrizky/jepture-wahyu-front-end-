@@ -11,7 +11,7 @@ class Post extends Component {
   }
 
   componentDidMount () {``
-    axios.get('https://my-json-server.typicode.com/wahyufaturrizky/dbwahyu/posts').then(response => {
+    axios.get('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/posts').then(response => {
       this.setState({posts: response.data});
       console.log(response);
     });
