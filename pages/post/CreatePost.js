@@ -29,7 +29,7 @@ class CreatePost extends Component {
       update_at: this.state.update_at
     };
 
-    axios.post(`https://my-json-server.typicode.com/wahyufaturrizky/dbwahyu/posts`,{posts})
+    axios.post(`https://api.zeit.co/v1/integrations/deploy/QmYsCmUMZp7CKDyDayCy41JL7T14hpesXn52X2isW3uPZs/WBL0kz9wJX`,{posts})
       .then(res => {
         console.log(res);
         console.log(res.data);
