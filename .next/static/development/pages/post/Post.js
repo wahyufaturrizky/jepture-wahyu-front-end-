@@ -14360,7 +14360,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost%2FPost&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5Cpost%5CPost.js ***!
   \**********************************************************************************************************************************************/
@@ -14383,5 +14383,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=Post.js.map

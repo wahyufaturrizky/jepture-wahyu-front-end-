@@ -13476,7 +13476,8 @@ function (_Component) {
       category_name: '',
       body_post: '',
       status_post: '',
-      created_at: ''
+      created_at: '',
+      update_at: ''
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleSubmit", function (event) {
@@ -13487,7 +13488,8 @@ function (_Component) {
         category_name: _this.state.category_name,
         body_post: _this.state.body_post,
         status_post: _this.state.status_post,
-        created_at: _this.state.created_at
+        created_at: _this.state.created_at,
+        update_at: _this.state.update_at
       };
       axios__WEBPACK_IMPORTED_MODULE_10___default.a.post("https://my-json-server.typicode.com/wahyufaturrizky/dbwahyu/posts", {
         posts: posts
@@ -13509,35 +13511,35 @@ function (_Component) {
         title: "Create Post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 41
         },
         __self: this
       }, __jsx("div", {
         className: "main-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 43
         },
         __self: this
       }, __jsx("section", {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 44
         },
         __self: this
       }, __jsx("div", {
         className: "section-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 45
         },
         __self: this
       }, __jsx("div", {
         className: "section-header-back",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13545,41 +13547,41 @@ function (_Component) {
         href: "./",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
       }, __jsx("a", {
         className: "btn btn-icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
       }, __jsx("i", {
         className: "fas fa-arrow-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
       })))), __jsx("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 49
         },
         __self: this
       }, "Create New Post"), __jsx("div", {
         className: "section-header-breadcrumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 50
         },
         __self: this
       }, __jsx("div", {
         className: "breadcrumb-item active",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13587,20 +13589,20 @@ function (_Component) {
         href: "../dashboard/  ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       }, "Dashboard"))), __jsx("div", {
         className: "breadcrumb-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 52
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13608,110 +13610,110 @@ function (_Component) {
         href: "./",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 52
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 52
         },
         __self: this
       }, "Posts"))), __jsx("div", {
         className: "breadcrumb-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 53
         },
         __self: this
       }, "Create New Post"))), __jsx("div", {
         className: "section-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 56
         },
         __self: this
       }, __jsx("h2", {
         className: "section-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 57
         },
         __self: this
       }, "Create New Post"), __jsx("p", {
         className: "section-lead",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 58
         },
         __self: this
       }, "On this page you can create a new post and fill in all fields."), __jsx("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 61
         },
         __self: this
       }, __jsx("div", {
         className: "col-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 62
         },
         __self: this
       }, __jsx("div", {
         className: "card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 63
         },
         __self: this
       }, __jsx("div", {
         className: "card-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 64
         },
         __self: this
       }, __jsx("h4", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 65
         },
         __self: this
       }, "Write Your Post")), __jsx("div", {
         className: "card-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 67
         },
         __self: this
       }, __jsx("form", {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 68
         },
         __self: this
       }, __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 69
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 70
         },
         __self: this
       }, "Title"), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 71
         },
         __self: this
       }, __jsx("input", {
@@ -13725,28 +13727,28 @@ function (_Component) {
         name: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 72
         },
         __self: this
       }))), __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 75
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         },
         __self: this
       }, "Author"), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         },
         __self: this
       }, __jsx("input", {
@@ -13760,32 +13762,32 @@ function (_Component) {
         name: "author",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 78
         },
         __self: this
       }))), __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 81
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 82
         },
         __self: this
       }, "Category"), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 83
         },
         __self: this
       }, __jsx("select", {
-        className: "form-control selectric",
+        className: "form-control",
         onChange: function onChange(event) {
           return _this2.setState({
             category_name: event.target.value
@@ -13794,59 +13796,60 @@ function (_Component) {
         name: "category_name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 84
         },
         __self: this
       }, __jsx("option", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 85
         },
         __self: this
       }, "Choose Bellow"), __jsx("option", {
         value: "Tech",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 86
         },
         __self: this
       }, "Tech"), __jsx("option", {
         value: "News",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 87
         },
         __self: this
       }, "News"), __jsx("option", {
         value: "Political",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 88
         },
         __self: this
       }, "Political")))), __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 92
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 93
         },
         __self: this
       }, "Content"), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 94
         },
         __self: this
       }, __jsx("textarea", {
-        rows: "4",
+        type: "text",
+        className: "form-control",
         onChange: function onChange(event) {
           return _this2.setState({
             body_post: event.target.value
@@ -13855,32 +13858,32 @@ function (_Component) {
         name: "body_post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 95
         },
         __self: this
       }))), __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 98
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 99
         },
         __self: this
       }, "Status"), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 100
         },
         __self: this
       }, __jsx("select", {
-        className: "form-control selectric",
+        className: "form-control",
         onChange: function onChange(event) {
           return _this2.setState({
             status_post: event.target.value
@@ -13889,55 +13892,55 @@ function (_Component) {
         name: "status_post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 101
         },
         __self: this
       }, __jsx("option", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 102
         },
         __self: this
       }, "Choose Below"), __jsx("option", {
         value: "Publish",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 103
         },
         __self: this
       }, "Publish"), __jsx("option", {
         value: "Draft",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 104
         },
         __self: this
       }, "Draft"), __jsx("option", {
         value: "Pending",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 105
         },
         __self: this
       }, "Pending")))), __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 109
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 110
         },
         __self: this
       }, "Create Date"), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 111
         },
         __self: this
       }, __jsx("input", {
@@ -13952,28 +13955,64 @@ function (_Component) {
         name: "created_at",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 112
         },
         __self: this
       }))), __jsx("div", {
         className: "form-group row mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 115
         },
         __self: this
       }, __jsx("label", {
         className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 116
+        },
+        __self: this
+      }, "Update Date"), __jsx("div", {
+        className: "col-sm-12 col-md-7",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 117
+        },
+        __self: this
+      }, __jsx("input", {
+        type: "date",
+        className: "form-control datemask",
+        placeholder: "YYYY/MM/DD",
+        onChange: function onChange(event) {
+          return _this2.setState({
+            update_at: event.target.value
+          });
+        },
+        name: "update_at",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118
+        },
+        __self: this
+      }))), __jsx("div", {
+        className: "form-group row mb-4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121
+        },
+        __self: this
+      }, __jsx("label", {
+        className: "col-form-label text-md-right col-12 col-md-3 col-lg-3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122
         },
         __self: this
       }), __jsx("div", {
         className: "col-sm-12 col-md-7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 123
         },
         __self: this
       }, __jsx("button", {
@@ -13981,7 +14020,7 @@ function (_Component) {
         className: "btn btn-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 124
         },
         __self: this
       }, "Create Post"))))))))))));
@@ -13995,7 +14034,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost%2FCreatePost&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5Cpost%5CCreatePost.js ***!
   \**********************************************************************************************************************************************************/
@@ -14018,5 +14057,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=CreatePost.js.map

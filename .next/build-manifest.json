@@ -16,11 +16,23 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
+    "/dashboard/DashboardAdmin": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/post/CreatePost": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/post/EditPost": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/post/Post": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/post/ViewPost": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

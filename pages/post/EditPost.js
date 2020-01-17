@@ -17,6 +17,7 @@ class EditPost extends Component {
             <h1>Edit Post</h1>
             <div className="section-header-breadcrumb">
               <div className="breadcrumb-item active"><Link as="../dashboard/DashboardAdmin" href="../dashboard/"><a>Dashboard</a></Link></div>
+              <div className="breadcrumb-item"><Link as="./Post" href="./"><a>Posts</a></Link></div>
               <div className="breadcrumb-item">Edit Post</div>
             </div>
           </div>
