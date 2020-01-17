@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1745,7 +1745,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/dashboard/DashboardAdmin",
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -1764,14 +1765,21 @@ const SideBar = () => {
       lineNumber: 11
     },
     __self: undefined
-  }, __jsx("a", {
-    href: "index.html",
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: undefined
-  }, "St")), __jsx("ul", {
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "St"))), __jsx("ul", {
     className: "sidebar-menu",
     __source: {
       fileName: _jsxFileName,
@@ -1786,7 +1794,7 @@ const SideBar = () => {
     },
     __self: undefined
   }, "Dashboard"), __jsx("li", {
-    className: "dropdown active",
+    className: "dropdown",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -1827,7 +1835,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/dashboard/DashboardAdmin",
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -1890,7 +1899,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/CreatePost",
+    as: "/post/CreatePost",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -1910,7 +1920,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/Post",
+    as: "/post/Post",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -3835,7 +3846,8 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "./Post",
+      as: "./Post",
+      href: "./",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
@@ -3876,7 +3888,8 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "../dashboard/DashboardAdmin",
+      as: "../dashboard/DashboardAdmin",
+      href: "../dashboard/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 19
@@ -4037,7 +4050,7 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 49
       },
       __self: this
-    }, "Ujang Maman ", __jsx("div", {
+    }, "Wahyu Fatur Rizki ", __jsx("div", {
       className: "text-muted d-inline font-weight-normal",
       __source: {
         fileName: _jsxFileName,
@@ -4051,19 +4064,13 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 49
       },
       __self: this
-    }), " Web Developer")), "Ujang maman is a superhero name in ", __jsx("b", {
+    }), " Web Developer")), "Wahyu Fatur Rizki is a superhero name in ", __jsx("b", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 50
       },
       __self: this
-    }, "Indonesia"), ", especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with ", __jsx("b", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, "'John Doe'"), "."), __jsx("div", {
+    }, "Indonesia"), ", especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template."), __jsx("div", {
       className: "card-footer text-center",
       __source: {
         fileName: _jsxFileName,
@@ -4077,7 +4084,7 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 53
       },
       __self: this
-    }, "Follow Ujang On"), __jsx("a", {
+    }, "Follow Wahyu Fatur Rizki On"), __jsx("a", {
       href: "https://www.linkedin.com/in/wahyu-fatur-rizky/",
       target: "_blank",
       className: "btn btn-social-icon btn-facebook mr-1",
@@ -4405,7 +4412,8 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/post/Post",
+      as: "/post/Post",
+      href: "/post/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 126
@@ -4419,7 +4427,8 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, "Back")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/post/Post",
+      as: "/post/Post",
+      href: "/post/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 127
@@ -4441,7 +4450,7 @@ class EditPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ 8:
+/***/ 3:
 /*!**************************************!*\
   !*** multi ./pages/post/EditPost.js ***!
   \**************************************/

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -629,7 +629,8 @@ const ListDataTable = props => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/ViewPost",
+    as: "/post/ViewPost",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -649,7 +650,8 @@ const ListDataTable = props => {
     },
     __self: undefined
   }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/EditPost",
+    as: "/post/EditPost",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -1940,7 +1942,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/dashboard/DashboardAdmin",
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -1959,14 +1962,21 @@ const SideBar = () => {
       lineNumber: 11
     },
     __self: undefined
-  }, __jsx("a", {
-    href: "index.html",
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: undefined
-  }, "St")), __jsx("ul", {
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "St"))), __jsx("ul", {
     className: "sidebar-menu",
     __source: {
       fileName: _jsxFileName,
@@ -1981,7 +1991,7 @@ const SideBar = () => {
     },
     __self: undefined
   }, "Dashboard"), __jsx("li", {
-    className: "dropdown active",
+    className: "dropdown",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -2022,7 +2032,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/dashboard/DashboardAdmin",
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -2085,7 +2096,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/CreatePost",
+    as: "/post/CreatePost",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -2105,7 +2117,8 @@ const SideBar = () => {
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/Post",
+    as: "/post/Post",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -4097,7 +4110,8 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: "../dashboard/DashboardAdmin",
+      as: "../dashboard/DashboardAdmin",
+      href: "../dashboard/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 38
@@ -4131,7 +4145,8 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: "./CreatePost",
+      as: "./CreatePost",
+      href: "./",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42
@@ -4159,7 +4174,8 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: "../dashboard/DashboardAdmin",
+      as: "../dashboard/DashboardAdmin",
+      href: "../dashboard/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 45
@@ -4179,7 +4195,8 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: "/post/Post",
+      as: "/post/Post",
+      href: "/post/",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 46
@@ -4707,7 +4724,7 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
 /***/ }),
 
-/***/ 6:
+/***/ 9:
 /*!**********************************!*\
   !*** multi ./pages/post/Post.js ***!
   \**********************************/

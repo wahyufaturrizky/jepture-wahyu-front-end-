@@ -12,9 +12,9 @@ const ListDataTable = (props) => {
       </td>
       <td>{props.title}
         <div className="table-links">
-          <Link href="/post/ViewPost"><a>View</a></Link>
+          <Link as="/post/ViewPost" href="/post/"><a>View</a></Link>
           <div className="bullet" />
-          <Link href="/post/EditPost"><a href="#">Edit</a></Link>
+          <Link as="/post/EditPost" href="/post/"><a href="#">Edit</a></Link>
           <div className="bullet" />
           <a href="#" className="text-danger">Trash</a>
         </div>

@@ -37,7 +37,7 @@ const Homepage = () => {
                         <div className="d-block">
                           <label for="password" className="control-label">Password</label>
                           <div className="float-right">
-                            <Link href="./auth/AuthForgotPassword" >
+                            <Link as="./auth/AuthForgotPassword" href="./auth/" >
                               <a className="text-small">
                                 Forgot Password?
                               </a>
@@ -60,7 +60,7 @@ const Homepage = () => {
                       </div>
 
                       <div className="form-group">
-                        <Link href="./dashboard/DashboardAdmin">
+                        <Link as="./dashboard/DashboardAdmin" href="./dashboard/">
                           <a type="submit" className="btn btn-primary btn-lg btn-block" tabindex="4">
                             Login
                           </a>
@@ -70,7 +70,7 @@ const Homepage = () => {
                   </div>
                 </div>
                 <div className="mt-5 text-muted text-center">
-                  Don't have an account? <Link href="./auth/AuthRegister"><a>Create One</a></Link>
+                  Don't have an account? <Link as="./auth/AuthRegister" href="./auth/"><a>Create One</a></Link>
                 </div>
                 <div className="simple-footer">
                   Copyright &copy; Stisla 2018

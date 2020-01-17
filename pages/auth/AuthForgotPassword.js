@@ -1,6 +1,7 @@
 import React from 'react'
 import LayoutAuth from '../../components/LayoutAuth'
 import Router from 'next/router'
+import Link from 'next/link'
 
 const AuthForgotPassword = () => {
   return (
@@ -23,9 +24,11 @@ const AuthForgotPassword = () => {
                         <input id="email" type="email" className="form-control" name="email" tabIndex={1} required autofocus />
                       </div>
                       <div className="form-group">
-                        <button onClick={()=> Router.push('/index') } type="submit" className="btn btn-primary btn-lg btn-block" tabIndex={4}>
-                          Forgot Password
-                        </button>
+                        <Link as="/index" href="/index">
+                          <a type="submit" className="btn btn-primary btn-lg btn-block" tabIndex={4}>
+                            Forgot Password
+                          </a>
+                        </Link>
                       </div>
                     </form>
                   </div>

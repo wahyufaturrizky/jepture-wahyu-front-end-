@@ -6,25 +6,25 @@ const SideBar = () => {
       <div className="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div className="sidebar-brand">
-            <Link href="/dashboard/DashboardAdmin"><a>Stisla</a></Link>
+            <Link as="/dashboard/DashboardAdmin" href="/dashboard/"><a>Stisla</a></Link>
           </div>
           <div className="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
+            <Link as="/dashboard/DashboardAdmin" href="/dashboard/"><a>St</a></Link>
           </div>
           <ul className="sidebar-menu">
             <li className="menu-header">Dashboard</li>
-            <li className="dropdown active">
+            <li className="dropdown">
               <a href="#" className="nav-link has-dropdown"><i className="fas fa-fire" /><span>Dashboard</span></a>
               <ul className="dropdown-menu">
-                <li><Link href="/dashboard/DashboardAdmin"><a className="nav-link" href="index-0.html">General Dashboard</a></Link></li>
+                <li><Link as="/dashboard/DashboardAdmin" href="/dashboard/"><a className="nav-link" href="index-0.html">General Dashboard</a></Link></li>
               </ul>
             </li>
             <li className="menu-header">Pages</li>
             <li className="dropdown">
               <a href="#" className="nav-link has-dropdown"><i className="fas fa-bicycle" /> <span>Features</span></a>
               <ul className="dropdown-menu">
-                <li><Link href="/post/CreatePost"><a className="nav-link">Post Create</a></Link></li>
-                <li><Link href="/post/Post"><a className="nav-link">Posts</a></Link></li>
+                <li><Link as="/post/CreatePost" href="/post/"><a className="nav-link">Post Create</a></Link></li>
+                <li><Link as="/post/Post" href="/post/"><a className="nav-link">Posts</a></Link></li>
               </ul>
             </li>
           </ul>

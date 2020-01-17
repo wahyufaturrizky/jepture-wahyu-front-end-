@@ -1649,7 +1649,8 @@ var SideBar = function SideBar() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/dashboard/DashboardAdmin",
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -1668,14 +1669,21 @@ var SideBar = function SideBar() {
       lineNumber: 11
     },
     __self: this
-  }, __jsx("a", {
-    href: "index.html",
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, "St")), __jsx("ul", {
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "St"))), __jsx("ul", {
     className: "sidebar-menu",
     __source: {
       fileName: _jsxFileName,
@@ -1690,7 +1698,7 @@ var SideBar = function SideBar() {
     },
     __self: this
   }, "Dashboard"), __jsx("li", {
-    className: "dropdown active",
+    className: "dropdown",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -1731,7 +1739,8 @@ var SideBar = function SideBar() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/dashboard/DashboardAdmin",
+    as: "/dashboard/DashboardAdmin",
+    href: "/dashboard/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -1794,7 +1803,8 @@ var SideBar = function SideBar() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/CreatePost",
+    as: "/post/CreatePost",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -1814,7 +1824,8 @@ var SideBar = function SideBar() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/post/Post",
+    as: "/post/Post",
+    href: "/post/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -13457,7 +13468,8 @@ function (_Component) {
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: "./Post",
+        as: "./Post",
+        href: "./",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 15
@@ -13498,7 +13510,8 @@ function (_Component) {
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: "../dashboard/DashboardAdmin",
+        as: "../dashboard/DashboardAdmin",
+        href: "../dashboard/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
@@ -13659,7 +13672,7 @@ function (_Component) {
           lineNumber: 49
         },
         __self: this
-      }, "Ujang Maman ", __jsx("div", {
+      }, "Wahyu Fatur Rizki ", __jsx("div", {
         className: "text-muted d-inline font-weight-normal",
         __source: {
           fileName: _jsxFileName,
@@ -13673,19 +13686,13 @@ function (_Component) {
           lineNumber: 49
         },
         __self: this
-      }), " Web Developer")), "Ujang maman is a superhero name in ", __jsx("b", {
+      }), " Web Developer")), "Wahyu Fatur Rizki is a superhero name in ", __jsx("b", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
         },
         __self: this
-      }, "Indonesia"), ", especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with ", __jsx("b", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      }, "'John Doe'"), "."), __jsx("div", {
+      }, "Indonesia"), ", especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template."), __jsx("div", {
         className: "card-footer text-center",
         __source: {
           fileName: _jsxFileName,
@@ -13699,7 +13706,7 @@ function (_Component) {
           lineNumber: 53
         },
         __self: this
-      }, "Follow Ujang On"), __jsx("a", {
+      }, "Follow Wahyu Fatur Rizki On"), __jsx("a", {
         href: "https://www.linkedin.com/in/wahyu-fatur-rizky/",
         target: "_blank",
         className: "btn btn-social-icon btn-facebook mr-1",
@@ -14027,7 +14034,8 @@ function (_Component) {
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: "/post/Post",
+        as: "/post/Post",
+        href: "/post/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 126
@@ -14041,7 +14049,8 @@ function (_Component) {
         },
         __self: this
       }, "Back")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        href: "/post/Post",
+        as: "/post/Post",
+        href: "/post/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 127
@@ -14065,7 +14074,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 0:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost%2FEditPost&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5Cpost%5CEditPost.js ***!
   \******************************************************************************************************************************************************/
@@ -14088,5 +14097,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=EditPost.js.map

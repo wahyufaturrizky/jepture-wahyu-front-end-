@@ -12,11 +12,11 @@ class ViewPost extends Component {
         <section className="section">
           <div className="section-header">
             <div className="section-header-back">
-              <Link href="./Post"><a className="btn btn-icon"><i className="fas fa-arrow-left" /></a></Link>
+              <Link as="./Post" href="./"><a className="btn btn-icon"><i className="fas fa-arrow-left" /></a></Link>
             </div>
             <h1>Detail Post</h1>
             <div className="section-header-breadcrumb">
-              <div className="breadcrumb-item active"><Link href="../dashboard/DashboardAdmin"><a>Dashboard</a></Link></div>
+              <div className="breadcrumb-item active"><Link as="../dashboard/DashboardAdmin" href="../dashboard/"><a>Dashboard</a></Link></div>
               <div className="breadcrumb-item">Detail Post</div>
             </div>
           </div>
@@ -111,7 +111,7 @@ class ViewPost extends Component {
                       </div>
                     </div>
                     <div className="card-footer text-right">
-                      <Link href="/post/Post"><a className="btn btn-primary mr-2">Back</a></Link>
+                      <Link as="/post/Post" href="/post/"><a className="btn btn-primary mr-2">Back</a></Link>
                     </div>
                   </form>
                 </div>

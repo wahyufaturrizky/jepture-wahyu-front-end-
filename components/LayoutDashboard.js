@@ -62,33 +62,33 @@ export default ({ children, title }) => (
       </div>
 
         {/* General JS Scripts */}
-        <script src="../static/assets/modules/jquery.min.js"></script>
-        <script src="../static/assets/modules/popper.js"></script>
-        <script src="../static/assets/modules/tooltip.js"></script>
-        <script src="../static/assets/modules/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../static/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
-        <script src="../static/assets/modules/moment.min.js"></script>
-        <script src="../static/assets/js/stisla.js"></script>
+        <script src="../static/assets/modules/jquery.min.js"/>
+        <script src="../static/assets/modules/popper.js"/>
+        <script src="../static/assets/modules/tooltip.js"/>
+        <script src="../static/assets/modules/bootstrap/js/bootstrap.min.js"/>
+        <script src="../static/assets/modules/nicescroll/jquery.nicescroll.min.js"/>
+        <script src="../static/assets/modules/moment.min.js"/>
+          <script src="../static/assets/js/stisla.js"/>
 
         {/* JS Libraies */}
-        <script src="../static/assets/modules/jquery.sparkline.min.js"></script>
-        <script src="../static/assets/modules/chart.min.js"></script>
-        <script src="../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
-        <script src="../static/assets/modules/summernote/summernote-bs4.js"></script>
-        <script src="../static/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
-        <script src="../static/assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
-        <script src="../static/assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
-        <script src="../static/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+        <script src="../static/assets/modules/jquery.sparkline.min.js"/>
+        <script src="../static/assets/modules/chart.min.js"/>
+        <script src="../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js"/>
+        <script src="../static/assets/modules/summernote/summernote-bs4.js"/>
+        <script src="../static/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"/>
+        <script src="../static/assets/modules/jquery-selectric/jquery.selectric.min.js"/>
+        <script src="../static/assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"/>
+        <script src="../static/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"/>
 
         {/* Page Specific JS File */}
-        <script src="../static/assets/js/page/index.js"></script>
-        <script src="../static/assets/js/page/features-posts.js"></script>
-        <script src="../static/assets/js/page/features-post-create.js"></script>
-        <script src="../static/assets/js/page/forms-advanced-forms.js"></script>
+        <script src="../static/assets/js/page/index.js"/>
+        <script src="../static/assets/js/page/features-posts.js"/>
+        <script src="../static/assets/js/page/features-post-create.js"/>
+        <script src="../static/assets/js/page/forms-advanced-forms.js"/>
 
         {/* Template JS File */}
-        <script src="../static/assets/js/scripts.js"></script>
-        <script src="../static/assets/js/custom.js"></script>
+        <script src="../static/assets/js/scripts.js"/>
+        <script src="../static/assets/js/custom.js"/>
 
     </div>
 )

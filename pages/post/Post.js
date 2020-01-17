@@ -35,15 +35,15 @@ class Post extends Component {
           <section className="section">
             <div className="section-header">
               <div className="section-header-back">
-                <Link href="../dashboard/DashboardAdmin"><a className="btn btn-icon"><i className="fas fa-arrow-left" /></a></Link>
+                <Link as="../dashboard/DashboardAdmin" href="../dashboard/"><a className="btn btn-icon"><i className="fas fa-arrow-left" /></a></Link>
               </div>
               <h1>Posts</h1>
               <div className="section-header-button">
-                <Link href="./CreatePost"><a className="btn btn-primary">Add New</a></Link>
+                <Link as="./CreatePost" href="./"><a className="btn btn-primary">Add New</a></Link>
               </div>
               <div className="section-header-breadcrumb">
-                <div className="breadcrumb-item active"><Link href="../dashboard/DashboardAdmin"><a>Dashboard</a></Link></div>
-                <div className="breadcrumb-item"><Link href="/post/Post"><a>Posts</a></Link></div>
+                <div className="breadcrumb-item active"><Link as="../dashboard/DashboardAdmin" href="../dashboard/"><a>Dashboard</a></Link></div>
+                <div className="breadcrumb-item"><Link as="/post/Post" href="/post/"><a>Posts</a></Link></div>
                 <div className="breadcrumb-item">All Posts</div>
               </div>
             </div>

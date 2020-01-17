@@ -1,6 +1,7 @@
 import React from 'react'
 import LayoutAuth from '../../components/LayoutAuth'
 import Router from 'next/router'
+import Link from 'next/link'
 
 const AuthRegister = () => {
   return (
@@ -86,9 +87,11 @@ const AuthRegister = () => {
                         </div>
                       </div>
                       <div className="form-group">
-                        <button onClick={()=> Router.push('/index') } type="submit" className="btn btn-primary btn-lg btn-block">
-                          Register
-                        </button>
+                        <Link as="/index" href="/index'">
+                          <a type="submit" className="btn btn-primary btn-lg btn-block">
+                            Register
+                          </a>
+                        </Link>
                       </div>
                     </form>
                   </div>
