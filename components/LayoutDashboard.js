@@ -68,13 +68,13 @@ export default ({ children, title }) => (
         <script src="../static/assets/modules/bootstrap/js/bootstrap.min.js"/>
         <script src="../static/assets/modules/nicescroll/jquery.nicescroll.min.js"/>
         <script src="../static/assets/modules/moment.min.js"/>
-          <script src="../static/assets/js/stisla.js"/>
+        <script src="../static/assets/js/stisla.js"/>
 
         {/* JS Libraies */}
+        <script src="../static/assets/modules/summernote/summernote-bs4.js"/>
         <script src="../static/assets/modules/jquery.sparkline.min.js"/>
         <script src="../static/assets/modules/chart.min.js"/>
         <script src="../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js"/>
-        <script src="../static/assets/modules/summernote/summernote-bs4.js"/>
         <script src="../static/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"/>
         <script src="../static/assets/modules/jquery-selectric/jquery.selectric.min.js"/>
         <script src="../static/assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"/>

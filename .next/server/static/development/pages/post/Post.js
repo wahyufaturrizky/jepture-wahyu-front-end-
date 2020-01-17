@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -458,28 +458,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   },
   __self: undefined
 }), __jsx("script", {
-  src: "../static/assets/modules/jquery.sparkline.min.js",
+  src: "../static/assets/modules/summernote/summernote-bs4.js",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 74
   },
   __self: undefined
 }), __jsx("script", {
-  src: "../static/assets/modules/chart.min.js",
+  src: "../static/assets/modules/jquery.sparkline.min.js",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 75
   },
   __self: undefined
 }), __jsx("script", {
-  src: "../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js",
+  src: "../static/assets/modules/chart.min.js",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 76
   },
   __self: undefined
 }), __jsx("script", {
-  src: "../static/assets/modules/summernote/summernote-bs4.js",
+  src: "../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 77
@@ -4724,7 +4724,7 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
 /***/ }),
 
-/***/ 9:
+/***/ 5:
 /*!**********************************!*\
   !*** multi ./pages/post/Post.js ***!
   \**********************************/

@@ -361,28 +361,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }), __jsx("script", {
-    src: "../static/assets/modules/jquery.sparkline.min.js",
+    src: "../static/assets/modules/summernote/summernote-bs4.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 74
     },
     __self: this
   }), __jsx("script", {
-    src: "../static/assets/modules/chart.min.js",
+    src: "../static/assets/modules/jquery.sparkline.min.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 75
     },
     __self: this
   }), __jsx("script", {
-    src: "../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js",
+    src: "../static/assets/modules/chart.min.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
     },
     __self: this
   }), __jsx("script", {
-    src: "../static/assets/modules/summernote/summernote-bs4.js",
+    src: "../static/assets/modules/owlcarousel2/dist/owl.carousel.min.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 77
@@ -14360,7 +14360,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 2:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost%2FPost&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5Cpost%5CPost.js ***!
   \**********************************************************************************************************************************************/
@@ -14383,5 +14383,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=Post.js.map
