@@ -11,7 +11,7 @@ class Post extends Component {
   }
 
   componentDidMount () {``
-    axios.get('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/posts').then(response => {
+    axios.get('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/jsonusers').then(response => {
       this.setState({posts: response.data});
       console.log(response);
     });

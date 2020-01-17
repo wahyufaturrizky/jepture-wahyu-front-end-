@@ -1,0 +1,41 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "commons": 1,
+      "static/runtime/main.js": 2,
+      "static/runtime/polyfills.js": 3,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\_app.js": 4,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\_error.js": 5,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\auth\\AuthForgotPassword.js": 6,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\auth\\AuthRegister.js": 7,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\dashboard\\DashboardAdmin.js": 8,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\index.js": 9,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\CreatePost.js": 10,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\EditPost.js": 11,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\Post.js": 12,
+      "static\\E9jS8x0FqcglOr6DWMHgX\\pages\\post\\ViewPost.js": 13
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

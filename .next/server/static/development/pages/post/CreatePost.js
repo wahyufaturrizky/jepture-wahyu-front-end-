@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3865,7 +3865,7 @@ class CreatePost extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
         created_at: this.state.created_at,
         update_at: this.state.update_at
       };
-      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/posts', posts).then(res => {
+      axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('http://localhost:3004/users', posts).then(res => {
         console.log(res);
         console.log(res.data);
       });
@@ -4384,7 +4384,7 @@ class CreatePost extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!****************************************!*\
   !*** multi ./pages/post/CreatePost.js ***!
   \****************************************/

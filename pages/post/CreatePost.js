@@ -29,7 +29,7 @@ class CreatePost extends Component {
       update_at: this.state.update_at
     };
 
-    axios.post('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/posts',posts)
+    axios.post('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/jsonusers',posts)
       .then(res => {
         console.log(res);
         console.log(res.data);

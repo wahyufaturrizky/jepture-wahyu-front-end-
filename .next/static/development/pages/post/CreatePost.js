@@ -13491,7 +13491,7 @@ function (_Component) {
         created_at: _this.state.created_at,
         update_at: _this.state.update_at
       };
-      axios__WEBPACK_IMPORTED_MODULE_10___default.a.post('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/posts', posts).then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_10___default.a.post('http://localhost:3004/users', posts).then(function (res) {
         console.log(res);
         console.log(res.data);
       });
@@ -14032,7 +14032,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 3:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpost%2FCreatePost&absolutePagePath=C%3A%5CReactJs%5Cjepture-wahyu-front-end-%5Cpages%5Cpost%5CCreatePost.js ***!
   \**********************************************************************************************************************************************************/
@@ -14055,5 +14055,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=CreatePost.js.map

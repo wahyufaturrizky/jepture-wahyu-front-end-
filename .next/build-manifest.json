@@ -1,28 +1,63 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_4b8bef20edde04f98d3f.js",
-    "static/development/dll/dll_4b8bef20edde04f98d3f.js.map"
-  ],
+  "devFiles": [],
   "pages": {
+    "/": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills.js",
-      "static/runtime/polyfills.js.map"
+      "static/runtime/polyfills-a591b2980a0968e30eae.js"
+    ],
+    "/auth/AuthForgotPassword": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    ],
+    "/auth/AuthRegister": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    ],
+    "/dashboard/DashboardAdmin": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
     ],
     "/post/CreatePost": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    ],
+    "/post/EditPost": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
     ],
     "/post/Post": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
+    ],
+    "/post/ViewPost": [
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.67249f9428262b61f5e1.js",
+      "static/runtime/main-eb0adadbafe721ef91d2.js"
     ]
   }
 }

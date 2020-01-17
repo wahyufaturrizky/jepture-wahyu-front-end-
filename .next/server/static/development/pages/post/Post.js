@@ -4050,7 +4050,7 @@ class Post extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
   componentDidMount() {
     ``;
-    axios__WEBPACK_IMPORTED_MODULE_4___default.a.get('https://jepture-wahyu-front-end.wahyufaturrizkyy.now.sh/posts').then(response => {
+    axios__WEBPACK_IMPORTED_MODULE_4___default.a.get('http://localhost:3004/users').then(response => {
       this.setState({
         posts: response.data
       });
