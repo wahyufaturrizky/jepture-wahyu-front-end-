@@ -4,6 +4,37 @@ import Link from 'next/link'
 import axios from 'axios' 
 
 class EditPost extends Component {
+
+  state = {
+    title: '',
+    author: '',
+    category_name: '',
+    body_post: '',
+    status_post: '',
+    created_at: '',
+    update_at: ''
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
+
+    const posts = {
+      title: this.state.title, 
+      author: this.state.author, 
+      category_name: this.state.category_name, 
+      body_post: this.state.body_post, 
+      status_post: this.state.status_post, 
+      created_at: this.state.created_at,
+      update_at: this.state.update_at
+    };
+
+    axios.put('http://localhost:3004/jsonusers',posts)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  }
+
   render () {
     return (
       <LayoutDashboard title="View Post">

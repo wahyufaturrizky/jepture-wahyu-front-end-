@@ -71,23 +71,23 @@
       "update_at": "2019-01-20"
     },
     {
-      "title": "UIUX Design",
-      "author": "Budi Rahmantio",
-      "category_name": "Tech",
-      "body_post": "UIUX Design Content",
+      "title": "Angular",
+      "author": "Rara",
+      "category_name": "News",
+      "body_post": "Angular Content",
       "status_post": "Publish",
-      "created_at": "2019-03-20",
-      "update_at": "2019-03-20",
+      "created_at": "2019-04-20",
+      "update_at": "2019-04-20",
       "id": 8
     },
     {
       "title": "React Native Mobile",
-      "author": "Rizky Triana",
-      "category_name": "Tech",
+      "author": "Fatur Rizki",
+      "category_name": "Mobile Developer",
       "body_post": "React Native Mobile Content",
       "status_post": "Publish",
-      "created_at": "2020-04-30",
-      "update_at": "2020-04-30",
+      "created_at": "2020-05-20",
+      "update_at": "2020-05-20",
       "id": 9
     }
   ]

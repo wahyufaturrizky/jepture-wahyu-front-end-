@@ -29,7 +29,7 @@ class CreatePost extends Component {
       update_at: this.state.update_at
     };
 
-    axios.post('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers',posts)
+    axios.post('http://localhost:3004/jsonusers',posts)
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -86,6 +86,8 @@ class CreatePost extends Component {
                               <option value="Tech">Tech</option>
                               <option value="News">News</option>
                               <option value="Political">Political</option>
+                              <option value="Web Developer">Web Developer</option>
+                              <option value="Mobile Developer">Mobile Developer</option>
                             </select>
                           </div>
                         </div>

@@ -10,22 +10,56 @@ class Post extends Component {
     posts: []
   }
 
-  componentDidMount () {``
+  getPostAPI = () => {
     axios.get('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers').then(response => {
       this.setState({posts: response.data});
       console.log(response);
     });
+
+  }
+
+  handleDelete = (data) => {
+
+    axios.delete(`https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers/${data}`)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+
+        this.getPostAPI()
+      })
+      .catch(error => {
+        console.log(error);
+    }); 
+  }
+
+  handleUpdate = (data) => {
+    // axios.put(`http://localhost:3004/jsonusers/${data}`)
+    //   .then(res => {
+    //     console.log(res);
+    //     console.log(res.data);
+
+    //     this.getPostAPI()
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    // }); 
+  }
+
+  componentDidMount () {
+    // axios.get('http://localhost:3004/jsonusers').then(response => {
+    //   this.setState({posts: response.data});
+    //   console.log(response);
+    // });
+    this.getPostAPI()
   }
   render() {
 
     const posts = this.state.posts.map(post => {
       return <ListDataTable 
               key={post.id} 
-              title={post.title} 
-              category={post.category_name} 
-              author={post.author} 
-              create={post.created_at} 
-              update={post.update_at}
+              data={post}
+              handleDelete={this.handleDelete}
+              handleUpdate={this.handleUpdate}
             />
     });
     return (

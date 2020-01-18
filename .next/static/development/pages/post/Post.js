@@ -525,7 +525,7 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 13
     },
     __self: this
-  }, props.title, __jsx("div", {
+  }, props.data.title, __jsx("div", {
     className: "table-links",
     __source: {
       fileName: _jsxFileName,
@@ -540,7 +540,8 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 15
     },
     __self: this
-  }, __jsx("a", {
+  }, __jsx("button", {
+    className: "btn btn-success",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -561,8 +562,11 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 17
     },
     __self: this
-  }, __jsx("a", {
-    href: "#",
+  }, __jsx("button", {
+    onClick: function onClick() {
+      return props.handleUpdate(props.data);
+    },
+    className: "btn btn-info",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -575,9 +579,11 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 18
     },
     __self: this
-  }), __jsx("a", {
-    href: "#",
-    className: "text-danger",
+  }), __jsx("button", {
+    className: "btn btn-danger",
+    onClick: function onClick() {
+      return props.handleDelete(props.data.id);
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -596,7 +602,7 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 23
     },
     __self: this
-  }, props.category)), __jsx("td", {
+  }, props.data.category_name)), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -628,19 +634,19 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 29
     },
     __self: this
-  }, props.author))), __jsx("td", {
+  }, props.data.author))), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, props.create), __jsx("td", {
+  }, props.data.created_at), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, props.update), __jsx("td", {
+  }, props.data.update_at), __jsx("td", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
@@ -653,7 +659,7 @@ var ListDataTable = function ListDataTable(props) {
       lineNumber: 35
     },
     __self: this
-  }, "Published")));
+  }, props.data.status_post)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ListDataTable);
@@ -13673,37 +13679,64 @@ function (_Component) {
       posts: []
     });
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "getPostAPI", function () {
+      axios__WEBPACK_IMPORTED_MODULE_10___default.a.get('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers').then(function (response) {
+        _this.setState({
+          posts: response.data
+        });
+
+        console.log(response);
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleDelete", function (data) {
+      axios__WEBPACK_IMPORTED_MODULE_10___default.a["delete"]("https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers/".concat(data)).then(function (res) {
+        console.log(res);
+        console.log(res.data);
+
+        _this.getPostAPI();
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleUpdate", function (data) {// axios.put(`http://localhost:3004/jsonusers/${data}`)
+      //   .then(res => {
+      //     console.log(res);
+      //     console.log(res.data);
+      //     this.getPostAPI()
+      //   })
+      //   .catch(error => {
+      //     console.log(error);
+      // }); 
+    });
+
     return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Post, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      "";
-      axios__WEBPACK_IMPORTED_MODULE_10___default.a.get('https://my-json-server.typicode.com/wahyufaturrizky/jepture-wahyu-front-end-/jsonusers').then(function (response) {
-        _this2.setState({
-          posts: response.data
-        });
-
-        console.log(response);
-      });
+      // axios.get('http://localhost:3004/jsonusers').then(response => {
+      //   this.setState({posts: response.data});
+      //   console.log(response);
+      // });
+      this.getPostAPI();
     }
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var posts = this.state.posts.map(function (post) {
         return __jsx(_components_ListDataTable__WEBPACK_IMPORTED_MODULE_11__["default"], {
           key: post.id,
-          title: post.title,
-          category: post.category_name,
-          author: post.author,
-          create: post.created_at,
-          update: post.update_at,
+          data: post,
+          handleDelete: _this2.handleDelete,
+          handleUpdate: _this2.handleUpdate,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 22
+            lineNumber: 58
           },
           __self: this
         });
@@ -13712,35 +13745,35 @@ function (_Component) {
         title: "Post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 66
         },
         __self: this
       }, __jsx("div", {
         className: "main-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 68
         },
         __self: this
       }, __jsx("section", {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 69
         },
         __self: this
       }, __jsx("div", {
         className: "section-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 70
         },
         __self: this
       }, __jsx("div", {
         className: "section-header-back",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 71
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13748,34 +13781,34 @@ function (_Component) {
         href: "../dashboard/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 72
         },
         __self: this
       }, __jsx("a", {
         className: "btn btn-icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 72
         },
         __self: this
       }, __jsx("i", {
         className: "fas fa-arrow-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 72
         },
         __self: this
       })))), __jsx("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 74
         },
         __self: this
       }, "Posts"), __jsx("div", {
         className: "section-header-button",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 75
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13783,28 +13816,28 @@ function (_Component) {
         href: "./",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 76
         },
         __self: this
       }, __jsx("a", {
         className: "btn btn-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 76
         },
         __self: this
       }, "Add New"))), __jsx("div", {
         className: "section-header-breadcrumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 78
         },
         __self: this
       }, __jsx("div", {
         className: "breadcrumb-item active",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 79
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13812,20 +13845,20 @@ function (_Component) {
         href: "../dashboard/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 79
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 79
         },
         __self: this
       }, "Dashboard"))), __jsx("div", {
         className: "breadcrumb-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 80
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -13833,83 +13866,83 @@ function (_Component) {
         href: "/post/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 80
         },
         __self: this
       }, __jsx("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 80
         },
         __self: this
       }, "Posts"))), __jsx("div", {
         className: "breadcrumb-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 81
         },
         __self: this
       }, "All Posts"))), __jsx("div", {
         className: "section-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 84
         },
         __self: this
       }, __jsx("h2", {
         className: "section-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 85
         },
         __self: this
       }, "Posts"), __jsx("p", {
         className: "section-lead",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 86
         },
         __self: this
       }, "You can manage all posts, such as editing, deleting and more."), __jsx("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 89
         },
         __self: this
       }, __jsx("div", {
         className: "col-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 90
         },
         __self: this
       }, __jsx("div", {
         className: "card mb-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 91
         },
         __self: this
       }, __jsx("div", {
         className: "card-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 92
         },
         __self: this
       }, __jsx("ul", {
         className: "nav nav-pills",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 93
         },
         __self: this
       }, __jsx("li", {
         className: "nav-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 94
         },
         __self: this
       }, __jsx("a", {
@@ -13917,21 +13950,21 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 95
         },
         __self: this
       }, "All ", __jsx("span", {
         className: "badge badge-white",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 95
         },
         __self: this
       }, "5"))), __jsx("li", {
         className: "nav-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 97
         },
         __self: this
       }, __jsx("a", {
@@ -13939,21 +13972,21 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 98
         },
         __self: this
       }, "Draft ", __jsx("span", {
         className: "badge badge-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 98
         },
         __self: this
       }, "1"))), __jsx("li", {
         className: "nav-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 100
         },
         __self: this
       }, __jsx("a", {
@@ -13961,21 +13994,21 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 101
         },
         __self: this
       }, "Pending ", __jsx("span", {
         className: "badge badge-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 101
         },
         __self: this
       }, "1"))), __jsx("li", {
         className: "nav-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 103
         },
         __self: this
       }, __jsx("a", {
@@ -13983,113 +14016,113 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 104
         },
         __self: this
       }, "Trash ", __jsx("span", {
         className: "badge badge-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 104
         },
         __self: this
       }, "0")))))))), __jsx("div", {
         className: "row mt-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 111
         },
         __self: this
       }, __jsx("div", {
         className: "col-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 112
         },
         __self: this
       }, __jsx("div", {
         className: "card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 113
         },
         __self: this
       }, __jsx("div", {
         className: "card-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 114
         },
         __self: this
       }, __jsx("h4", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 115
         },
         __self: this
       }, "All Posts")), __jsx("div", {
         className: "card-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 117
         },
         __self: this
       }, __jsx("div", {
         className: "float-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 118
         },
         __self: this
       }, __jsx("select", {
         className: "form-control selectric",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 119
         },
         __self: this
       }, __jsx("option", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 120
         },
         __self: this
       }, "Action For Selected"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 121
         },
         __self: this
       }, "Move to Draft"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 122
         },
         __self: this
       }, "Move to Pending"), __jsx("option", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 123
         },
         __self: this
       }, "Delete Pemanently"))), __jsx("div", {
         className: "float-right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 126
         },
         __self: this
       }, __jsx("form", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 127
         },
         __self: this
       }, __jsx("div", {
         className: "input-group",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 128
         },
         __self: this
       }, __jsx("input", {
@@ -14098,75 +14131,75 @@ function (_Component) {
         placeholder: "Search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 129
         },
         __self: this
       }), __jsx("div", {
         className: "input-group-append",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 130
         },
         __self: this
       }, __jsx("button", {
         className: "btn btn-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 131
         },
         __self: this
       }, __jsx("i", {
         className: "fas fa-search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 131
         },
         __self: this
       })))))), __jsx("div", {
         className: "clearfix mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 136
         },
         __self: this
       }), __jsx("div", {
         className: "table-responsive",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 137
         },
         __self: this
       }, __jsx("table", {
         className: "table table-striped",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 138
         },
         __self: this
       }, __jsx("tbody", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 139
         },
         __self: this
       }, __jsx("tr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 140
         },
         __self: this
       }, __jsx("th", {
         className: "text-center pt-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 141
         },
         __self: this
       }, __jsx("div", {
         className: "custom-checkbox custom-checkbox-table custom-control",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 142
         },
         __self: this
       }, __jsx("input", {
@@ -14177,7 +14210,7 @@ function (_Component) {
         id: "checkbox-all",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 143
         },
         __self: this
       }), __jsx("label", {
@@ -14185,70 +14218,70 @@ function (_Component) {
         className: "custom-control-label",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 145
         },
         __self: this
       }, "\xA0"))), __jsx("th", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 148
         },
         __self: this
       }, "Title"), __jsx("th", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 149
         },
         __self: this
       }, "Category"), __jsx("th", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 150
         },
         __self: this
       }, "Author"), __jsx("th", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 151
         },
         __self: this
       }, "Created At"), __jsx("th", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 152
         },
         __self: this
       }, "Update At"), __jsx("th", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 153
         },
         __self: this
       }, "Status")), posts))), __jsx("div", {
         className: "float-right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 159
         },
         __self: this
       }, __jsx("nav", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 160
         },
         __self: this
       }, __jsx("ul", {
         className: "pagination",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 161
         },
         __self: this
       }, __jsx("li", {
         className: "page-item disabled",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 162
         },
         __self: this
       }, __jsx("a", {
@@ -14257,28 +14290,28 @@ function (_Component) {
         "aria-label": "Previous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 163
         },
         __self: this
       }, __jsx("span", {
         "aria-hidden": "true",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 164
         },
         __self: this
       }, "\xAB"), __jsx("span", {
         className: "sr-only",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 165
         },
         __self: this
       }, "Previous"))), __jsx("li", {
         className: "page-item active",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 168
         },
         __self: this
       }, __jsx("a", {
@@ -14286,14 +14319,14 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 169
         },
         __self: this
       }, "1")), __jsx("li", {
         className: "page-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 171
         },
         __self: this
       }, __jsx("a", {
@@ -14301,14 +14334,14 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 172
         },
         __self: this
       }, "2")), __jsx("li", {
         className: "page-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 174
         },
         __self: this
       }, __jsx("a", {
@@ -14316,14 +14349,14 @@ function (_Component) {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 175
         },
         __self: this
       }, "3")), __jsx("li", {
         className: "page-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 143
+          lineNumber: 177
         },
         __self: this
       }, __jsx("a", {
@@ -14332,21 +14365,21 @@ function (_Component) {
         "aria-label": "Next",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 178
         },
         __self: this
       }, __jsx("span", {
         "aria-hidden": "true",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 179
         },
         __self: this
       }, "\xBB"), __jsx("span", {
         className: "sr-only",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 180
         },
         __self: this
       }, "Next"))))))))))))));
