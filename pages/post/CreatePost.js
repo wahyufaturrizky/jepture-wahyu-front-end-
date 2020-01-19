@@ -44,12 +44,12 @@ class CreatePost extends Component {
           <section className="section">
             <div className="section-header">
               <div className="section-header-back">
-                <Link as="./Post" href="./"><a className="btn btn-icon"><i className="fas fa-arrow-left" /></a></Link>
+                <Link as="./ListPost" href="./"><a className="btn btn-icon"><i className="fas fa-arrow-left" /></a></Link>
               </div>
               <h1>Create New Post</h1>
               <div className="section-header-breadcrumb">
                 <div className="breadcrumb-item active"><Link as="../dashboard/DashboardAdmin" href="../dashboard/  "><a>Dashboard</a></Link></div>
-                <div className="breadcrumb-item"><Link as="./Post" href="./"><a>Posts</a></Link></div>
+                <div className="breadcrumb-item"><Link as="./ListPost" href="./"><a>Posts</a></Link></div>
                 <div className="breadcrumb-item">Create New Post</div>
               </div>
             </div>

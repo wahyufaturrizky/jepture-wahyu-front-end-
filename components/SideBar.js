@@ -24,7 +24,7 @@ const SideBar = () => {
               <a href="#" className="nav-link has-dropdown"><i className="fas fa-bicycle" /> <span>Features</span></a>
               <ul className="dropdown-menu">
                 <li><Link as="/post/CreatePost" href="/post/"><a className="nav-link">Post Create</a></Link></li>
-                <li><Link as="/post/Post" href="/post/"><a className="nav-link">Posts</a></Link></li>
+                <li><Link as="/post/ListPost" href="/post/"><a className="nav-link">Posts</a></Link></li>
               </ul>
             </li>
           </ul>

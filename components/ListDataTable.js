@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'next/link';
+import Link from 'next/link'
 
 const ListDataTable = (props) => {
   return (
-    <tr>
+    <tr key={props.data.id}>
       <td>
         <div className="custom-checkbox custom-control">
           <input type="checkbox" data-checkboxes="mygroup" className="custom-control-input" id="checkbox-2" />
@@ -12,9 +12,9 @@ const ListDataTable = (props) => {
       </td>
       <td>{props.data.title}
         <div className="table-links">
-          <Link as="/post/ViewPost" href="/post/"><button className="btn btn-success">View</button></Link>
+          <Link href="/post/ViewPost/[id]" href="/post/ViewPost/" as={`/post/ViewPost/${props.data.id}`}><button className="btn btn-success">View</button></Link>
           <div className="bullet" />
-          <Link as="/post/EditPost" href="/post/"><button onClick={()=> props.handleUpdate(props.data)} className="btn btn-info">Edit</button></Link>
+          <Link as="/post/EditPost/[id]" href="/post/EditPost/" as={`/post/EditPost/${props.data.id}`}><button className="btn btn-info">Edit</button></Link>
           <div className="bullet" />
           <button className="btn btn-danger" onClick={()=> props.handleDelete(props.data.id)}>Trash</button>
         </div>

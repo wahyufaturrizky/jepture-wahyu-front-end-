@@ -1,7 +1,6 @@
 import React from 'react'
 import LayoutAuth from '../components/LayoutAuth'
 import Link from 'next/link'
-import Router from 'next/router'
 
 const Homepage = () => {
   return (
